@@ -10460,26 +10460,7 @@ div#files_list {
 .logos a, .logos div {
     background: #152430;
 }
-.card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 1px 1px 20px 3px #00000057;
-}
-.card1 img, .card3 img {
-  max-width: 300px;
-}
-a.card.card1:hover {
-  background: #0f553e;
-}
 
-a.card.card2:hover {
-  background: #152430;
-}
-
-a.card.card3:hover {
-  background: #040f28;
-}
 #valuation__tool {
   position: fixed;
   /* width: 60px; */

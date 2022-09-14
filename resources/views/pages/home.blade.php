@@ -391,6 +391,26 @@
 .cards svg {
     fill: #152430 !important;
 }
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 20px 3px #00000057;
+}
+.card1 img, .card3 img {
+  max-width: 300px;
+}
+a.card.card1:hover {
+  background: #0f553e;
+}
+
+a.card.card2:hover {
+  background: #152430;
+}
+
+a.card.card3:hover {
+  background: #040f28;
+}
 </style>
 
 @section('footer')
