@@ -411,6 +411,14 @@
 .card.card3:hover {
   background: #040f28;
 }
+.card {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  transition: box-shadow 0.25s;
+  border-radius: 2px;
+  max-height: 140px;
+} 
 </style>
 
 @section('footer')

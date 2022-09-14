@@ -4504,14 +4504,14 @@ small {
   background-color: #fff;
 }
 
-.card {
+/* .card {
   position: relative;
   margin: 0.5rem 0 1rem 0;
   background-color: #fff;
   transition: box-shadow 0.25s;
   border-radius: 2px;
   max-height: 140px;
-}
+} */
 .card .card-title {
   font-size: 24px;
   font-weight: 300;
