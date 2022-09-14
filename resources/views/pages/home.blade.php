@@ -400,15 +400,15 @@
 .card1 img, .card3 img {
   max-width: 300px;
 }
-a.card.card1:hover {
+.card.card1:hover {
   background: #0f553e;
 }
 
-a.card.card2:hover {
+.card.card2:hover {
   background: #152430;
 }
 
-a.card.card3:hover {
+.card.card3:hover {
   background: #040f28;
 }
 </style>
