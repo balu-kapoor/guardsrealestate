@@ -14,13 +14,13 @@
             <div class="col offset-m2 m3 s6 nav-links">
                 <h5 class="amber-text text-darken-1">Navigation</h5>
                 <ul>
-                    <li><a href="{{route('repair-maintenance')}}?list=L">Repair and maintenance</a></li>
                     <li><a href="{{route('website-property-search')}}?list=L">Lettings</a></li>
                     <li><a href="{{route('website-property-search')}}?list=S">Sales</a></li>
                     <li><a href="{{route('website-about')}}">About Us</a></li>
                     <li><a href="{{route('website-contact')}}">Get in touch</a></li>
                     <li><a  href="/payments">Payments</a></li>
                     <li><a  href="{{route('website-fees')}}">Fees & Terms</a></li>
+                    <li><a href="{{route('repair-maintenance')}}?list=L">Repair & Maintenance</a></li>
                     <li><a href="/privacy">Privacy Policy</a></li>
                     <li><a href="{{route('website-certificates')}}" >Certificates</a></li>
                 </ul>
@@ -45,71 +45,13 @@
         <div class="row adv-search home-page-modal-row">
             <div class="col s12">
                 <ul class="tabs">
-                    <li class="tab col s4 tab-one"><a class="active" href="#valuation-form">Valuation</a></li>
-                    <li class="tab col s4 tab-two"><a  href="#lettings-form">To Let</a></li>
+                    <!-- <li class="tab col s4 tab-one"><a class="active" href="#valuation-form">Valuation</a></li> -->
+                    <li class="tab col s4 tab-two"><a  class="active" href="#lettings-form">To Let</a></li>
                     <li class="tab col s4 tab-three"><a href="#sales-form">For Sale</a></li>
                 </ul>
             </div>
 
-            <div id="valuation-form" class="col s12 tab-content">
-                <form id="book-valuation-form-el">
-                    <div class="row">
-                        <div class="col s12 m6">
-                            <div class="search-wrapper">
-                                <div class="input-field">
-                                    <input name="postcode" required type="text"  class="autocomplete" placeholder="PostCode">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col s12 m6">
-
-
-                            <div class="input-field">
-                                <div class="num-ip">
-                                    <span>Bedrooms</span>
-                                    <div class="number-ip-field">
-                                        <input name="bedrooms" required type="number" placeholder="+1" min="0" max="10" step="1" value="1">
-                                        <div class="num-nav">
-                                            <div class="num-button num-up">+</div>
-                                            <div class="num-button num-down">-</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m6">
-                            <div class="search-wrapper">
-                                <div class="input-field">
-                                    <input name="name" required type="text" placeholder="First Name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m6">
-
-                            <div class="search-wrapper">
-                                <div class="input-field">
-                                    <input name="email" required type="email" placeholder="Email">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m6">
-
-                            <div class="search-wrapper">
-                                <div class="input-field">
-                                    <input name="phone" required type="text" placeholder="Phone Number">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m6">
-                            <button type="submit" id="bookvaluation-button-submit-container" class="btn-guards home-modal-wrapper">Book Valuation</button>
-{{--                            <div class="btn-find-wrapper home-modal-wrapper"><a class="btn-guards">Book Valuation</a> </div>--}}
-                            <div id="bookvaluation-success-msg">Thankyou for contacting us. One of our representatives will get back to you shortly.</div>
-                            <div id="bookvaluation-error-msg">Oops! There was an error with your request. Please try again later.</div>
-                        </div>
-                    </div>
-                </form>
-            </div>
+            
             <div id="lettings-form" class="col s12 tab-content">
                 <form action="{{route('website-property-search')}}" method="get">
                     <input type="hidden" name="list" value="L">
