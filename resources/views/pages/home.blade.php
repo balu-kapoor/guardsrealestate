@@ -70,7 +70,7 @@
                 <span class="v-widget-txt">Book a virtual appraisal for your property today</span>
             </span>
                 </div>
-                <div class="col l4 m6 s12 btn-container"> <a class="btn-guards modal-trigger" data-target="modal1" href="#modal1" >Book valuation</a></div>
+                <div class="col l4 m6 s12 btn-container"> <a class="btn-guards" href="{{ url('valuation/online') }}" >Book valuation</a></div>
             </div>
             @if(!empty($saleproperties))
             <div class="grid grid-1">

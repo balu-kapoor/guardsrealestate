@@ -10492,3 +10492,6 @@ div#files_list {
     left: 10px !important;
   }
 }
+.row.adv-search.home-page-modal-row .tabs {
+  flex-direction: row;
+}
