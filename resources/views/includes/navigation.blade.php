@@ -50,7 +50,7 @@
                     <img src="{{asset('images/horseicon.svg')}}" class="horse" id="hd-logo">
                 </a>
                 <div class="right" style="  line-height: 30px; text-align: center;">
-                    <a class="btn-guards modal-trigger" data-target="modal1" href="#modal1" style="display: block;margin-top:20px;left: 20px;position: relative;">Find your home</a>
+                    <a class="btn-guards modal-trigger" data-target="modal1" href="#modal1" style="display: block;margin-top:20px;position: relative;">Find your home</a>
                 </div>
                 <!-- <div class="right" style="  line-height: 30px; text-align: center;">
                     <a class="btn-guards" href="{{ url('valuation/online') }}" style="display: block;margin-top:20px;">Book valuation</a>
