@@ -414,6 +414,9 @@ a.card.card3:hover {
 .card {  
   max-height: 140px;
 }
+ul.cards.container {
+    display: none;
+}
 </style>
 
 @section('footer')

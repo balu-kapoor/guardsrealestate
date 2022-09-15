@@ -9,8 +9,7 @@
                     </div>
                     <ul class="collapsible">
                         <li style=" -webkit-animation-duration: .5s;animation-duration:.5s;"><a href="{{route('website-home')}}" class="selected-nav ">Home</a>
-                        </li>
-                        <li style=" -webkit-animation-duration: .5s;animation-duration:.5s;"><a href="{{route('repair-maintenance')}}" class="selected-nav ">Repair And Maintenance</a>
+                        </li>                       
                         <li style=" -webkit-animation-duration: .7s;animation-duration: .7s;">
                             <div class="collapsible-header"><i class="material-icons">add</i>Lettings</div>
                             <ul class="collapsible-body">
@@ -31,6 +30,7 @@
                         </li>
                         <li style=" -webkit-animation-duration: 1.1s;animation-duration: 1.1s;"><a href="/valuation/online" >Valuations</a></li>
                         <li style=" -webkit-animation-duration: 1.2s;animation-duration: 1.2s;">
+                        <li style=" -webkit-animation-duration: .5s;animation-duration:.5s;"><a href="{{route('repair-maintenance')}}" class="selected-nav ">Repair And Maintenance</a></li>
                             <div class="collapsible-header"><i class="material-icons">add</i>About Us</div>
                             <ul class="collapsible-body">
                                 <li><a  href="{{route('website-about')}}">About Us</a></li>
