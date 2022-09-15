@@ -32,7 +32,7 @@
 
                     <a class="btn-guards full-width" href="{{asset('files/Client-Money-Protection-Security-Certificate-Email.pdf')}}" title="Guards - Client Money Protection Scheme" target="_blank">CLIENT MONEY PROTECTION SECURITY CERTIFICATE</a>
 
-                    <a class="btn-guards full-width"  href="{{asset('files/PRS-Certificate.pdf')}}" title="Guards - Property Redress Scheme" target="_blank">PROPERTY REDRESS SCHEME MEMBERSHIP 21/22</a>
+                    <a class="btn-guards full-width"  href="{{asset('files/PRS+MemberShip+Certificate.pdf')}}" title="Guards - Property Redress Scheme" target="_blank">PROPERTY REDRESS SCHEME MEMBERSHIP 21/22</a>
 
                     <a class="btn-guards full-width"   href="{{asset('files/PRS+MemberShip+Certificate.pdf')}}" title="Guards - My Deposits Protection" target="_blank">MY DEPOSITS PROTECTION CERTIFICATE</a>
 
