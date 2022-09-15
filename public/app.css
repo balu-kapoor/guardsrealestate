@@ -10484,4 +10484,8 @@ div#files_list {
   /* .home-video {
     width: auto !important;
   } */
+  .navbar-fixed .btn-guards {
+    font-size: 12px !important;
+    height:  !important;
+  }
 }
