@@ -14,6 +14,7 @@
             <div class="col offset-m2 m3 s6 nav-links">
                 <h5 class="amber-text text-darken-1">Navigation</h5>
                 <ul>
+                    <li><a href="{{route('repair-maintenance')}}?list=L">Repair and maintenance</a></li>
                     <li><a href="{{route('website-property-search')}}?list=L">Lettings</a></li>
                     <li><a href="{{route('website-property-search')}}?list=S">Sales</a></li>
                     <li><a href="{{route('website-about')}}">About Us</a></li>
