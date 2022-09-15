@@ -10486,6 +10486,9 @@ div#files_list {
   } */
   .navbar-fixed .btn-guards {
     font-size: 12px !important;
-    height:  !important;
+    height: 42px !important;
+  }
+  .navbar-fixed .left .btn-guards {
+    left: 10px !important;
   }
 }
