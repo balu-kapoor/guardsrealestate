@@ -10481,7 +10481,7 @@ div#files_list {
   .collapsible-header, .collapsible li A {
       font-size: 18px !important;
   }
-  .home-video {
+  /* .home-video {
     width: auto !important;
-  }
+  } */
 }
