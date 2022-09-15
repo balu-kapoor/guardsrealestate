@@ -28,7 +28,7 @@
             <div class="privacy-container">
                 <div class="container">
 
-                    <a class="btn-guards full-width"  href="{{asset('files/Client-Money-Protection-Certificate-Email.pdf')}}" title="Guards - Client Money Protection Scheme" target="_blank">CLIENT MONEY PROTECTION SCHEME</a>
+                    <a class="btn-guards full-width"  href="{{asset('files/Propertymark+CMP+Main+Scheme+Certificate.pdf')}}" title="Guards - Client Money Protection Scheme" target="_blank">CLIENT MONEY PROTECTION SCHEME</a>
 
                     <a class="btn-guards full-width" href="{{asset('files/Client-Money-Protection-Security-Certificate-Email.pdf')}}" title="Guards - Client Money Protection Scheme" target="_blank">CLIENT MONEY PROTECTION SECURITY CERTIFICATE</a>
 
