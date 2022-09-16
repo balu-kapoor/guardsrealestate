@@ -32,14 +32,14 @@
                             <h4 class="heading-guards guards-border guards-bottom-border">Guards Real Estate’s Fee structure is extremely competitive.</h4>
                         </div>
                         <p class="p-l-text">We offer a No Let No Fee & No Sale No Fee Service to all of our clients, for more information get in touch. </p>
-                        <p class="p-l-text">See Standard Fees Below: </p>
+                        <!-- <p class="p-l-text">See Standard Fees Below: </p> -->
                     </div>
                     <!-- form -->
                     @if (!Cookie::get('asked-for-fees'))                                                                                
                     <div class="col s12 m6">
                         <!-- <h4 class="heading-guards guards-border guards-bottom-border">Send us an email</h4> -->
                         <p class="contact-text p-l-text">
-                            Please submit the form to see fee details.
+                            Please fill in the form below to see Fees details.
                         </p>
                         <div class="form-block">
                             <div class="row">

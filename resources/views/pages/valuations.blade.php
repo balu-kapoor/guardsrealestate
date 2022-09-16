@@ -36,7 +36,7 @@
 
             </div>
             <div class="col s12 button-area">
-                <a class="btn-guards modal-trigger" data-target="modal1" href="#modal1" >Book valuation</a>
+                <a class="btn-guards" href="{{ url('valuation/online') }}" >Book valuation</a>
             </div>
     </div>
     </div>
