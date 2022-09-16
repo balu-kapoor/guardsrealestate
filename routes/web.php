@@ -31,6 +31,7 @@ Route::get('/property/search',  'Properties@searchResults')->name('website-prope
 Route::get('/property/view/{property}-{slug?}',  'Properties@detailPage')->name('website-property-detail');
 Route::get('/property/view',  'Properties@detailPage10')->name('website-property-detail10');
 Route::get('/about-us',  'About@index')->name('website-about');
+Route::get('/valuations',  'About@valuations')->name('website-valuations');
 Route::get('/contact-us',  'Contact@index')->name('website-contact');
 Route::get('/payments',  'Payments@index')->name('website-payments');
 Route::get('/fees',  'About@fees')->name('website-fees');

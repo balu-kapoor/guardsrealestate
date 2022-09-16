@@ -26,7 +26,10 @@ class About extends Controller
     {
         return view('pages.certificates',['filterOptions' => $this->getSearchFilterOptionsForView()]);
     }
-
+    public function valuations(Request $request)
+    {
+        return view('pages.valuations',['filterOptions' => $this->getSearchFilterOptionsForView()]);
+    }
     public function SubmitEnquiry(Request $request)
     {
         $request->validate([
