@@ -32,7 +32,7 @@
 @section('page-body')
     <main >
         <div class="hero ">
-            <video  autoplay loop muted playsinline  poster="{{asset('images/hero1.jpg')}}"  class="home-video">
+            <video  autoplay muted playsinline  poster="{{asset('images/hero1.jpg')}}"  class="home-video">
                 <source src="{{asset('home.mp4')}}" type="video/mp4">
             </video>
             <!-- <div ><a class="btn-guards white-text modal-trigger" href="#modal1" >Find your home</a></div> -->
@@ -43,20 +43,49 @@
                 </a>
             </div>
         </div>
-        <ul class="cards container">
+        <!-- <ul class="cards container">
             <li>
-                <a href="" class="card card1">
-                <img src="{{ asset('images/country.png') }}" class="card__image" alt="" />                
-                </a>      
+                <div href="" class="card card1">
+                <div><p>Guards Country</p></div>
+                    <img src="{{ asset('images/country.png') }}" class="card__image" alt="" />                
+                </div>      
             </li>           
             <li>
                 <a href="" class="card card3">
+                <div></div>
                 <img src="{{ asset('images/london.png') }}" class="card__image" alt="" />                
                 </a>      
             </li>
              
-        </ul>
-        
+        </ul> -->   
+        <ul class="cards container">
+            <li>
+                <a href="" class="card">
+                <img src="{{ asset('images/country.png') }}" class="card__image" alt="" />
+                <div class="card__overlay">
+                    <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                    <div class="card__header-text">
+                        <h3 class="card__title">Guards Country</h3>            
+                    </div>
+                    </div>    
+                </div>
+                </a>      
+            </li>
+            <li>
+                <a href="" class="card">
+                <img src="{{ asset('images/london.png') }}" class="card__image" alt="" />
+                <div class="card__overlay">        
+                    <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+                    <div class="card__header-text">
+                        <h3 class="card__title">Guards London</h3>
+                    </div>
+                    </div>                    
+                </div>
+                </a>
+            </li>    
+        </ul>     
         <div class="container" id="target-element">
             <div class="v-widget row">
                 <div class="col l8 m6 s12 val-info">
@@ -298,7 +327,7 @@
 .card__image {      
   width: 100%;
   height: auto;
-  max-width: 200px;
+  max-width: 300px;
 }
 
 .card__overlay {
@@ -410,8 +439,9 @@ a.card.card3:hover {
   max-height: 140px;
 }
 ul.cards.container {
-    display: none;
+    /* display: none; */
 }
+
 </style>
 
 @section('footer')

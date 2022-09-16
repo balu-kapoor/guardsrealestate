@@ -10491,6 +10491,12 @@ div#files_list {
   .navbar-fixed .left .btn-guards {
     left: 10px !important;
   }
+  .hero {
+    height: 215px !important;
+  }
+  .scroll-to {
+    top: 170px;
+  }
 }
 .row.adv-search.home-page-modal-row .tabs {
   flex-direction: row;
