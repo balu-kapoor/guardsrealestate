@@ -48,12 +48,7 @@
                 <a href="" class="card card1">
                 <img src="{{ asset('images/country.png') }}" class="card__image" alt="" />                
                 </a>      
-            </li>
-            <li>
-                <a href="" class="card card2">
-                <img src="{{ asset('images/full_logo.png') }}" class="card__image" alt="" />                
-                </a>      
-            </li> 
+            </li>           
             <li>
                 <a href="" class="card card3">
                 <img src="{{ asset('images/london.png') }}" class="card__image" alt="" />                
