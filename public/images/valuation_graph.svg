@@ -3,7 +3,7 @@
 	 viewBox="0 0 534 166" style="enable-background:new 0 0 534 166;" xml:space="preserve">
 <style type="text/css">
 .valuation_svg_graph_line_ascending {
-stroke-dasharray: 555; opacity: 1; stroke-width:2; stroke:#2bd3df; fill: none;
+stroke-dasharray: 555; opacity: 1; stroke-width:2; stroke:#efb519; fill: none;
 animation: dash_line 5s ease;
 }
 @keyframes dash_line {
@@ -14,7 +14,7 @@ animation: dash_line 5s ease;
 
 .valuation_svg_median_indicator {
 opacity: 1;
-fill: #1f98a1;
+fill: #af8a27;
 animation: median_indicator_fade_in 5s ease;
 }
 @keyframes median_indicator_fade_in {
@@ -26,7 +26,7 @@ animation: median_indicator_fade_in 5s ease;
 
 .valuation_svg_graph_indicator{
 opacity: 1;
-fill: #2bd3df;
+fill: #efb519;
 animation: whole_indicator_fade_in 5s ease;
 }
 @keyframes whole_indicator_fade_in {
@@ -62,7 +62,7 @@ animation: val_text_fade_in 5s ease;
 100% {opacity: 1;}
 }
 </style>
-<rect fill="#126c72" width="534" height="166"/>
+<rect fill="#705713" width="534" height="166"/>
 <line class="valuation_svg_graph_line_ascending" x1="0" y1="166" x2="534" y2="24.7"/>
 <polygon class="valuation_svg_graph_indicator"  points="534,166 534,24.7 0,166 "/>
 <polygon class="valuation_svg_median_indicator" points="396.2,61.2 126.5,132.6 126,166.1 396.1,166 "/>
