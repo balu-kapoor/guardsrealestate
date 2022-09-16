@@ -17,7 +17,7 @@
         <img src="{{ asset('images/landlords.jpg')}}" class="responsive-img ">
         <div class="header-row-heading">
             <div class="header-row">
-                <h1 class="main-heading-row-button guards-border guards-top-border guards-bottom-border">Tenants</h1>
+                <h1 class="main-heading-row-button guards-border guards-top-border guards-bottom-border">Landlords</h1>
             </div>
         </div>
     </div>
