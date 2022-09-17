@@ -32,7 +32,7 @@
 @section('page-body')
     <main >
         <div class="hero ">
-            <video  autoplay muted playsinline  poster="{{asset('images/hero1.jpg')}}"  class="home-video">
+            <video loop muted playsinline  poster="{{asset('images/hero1.jpg')}}"  class="home-video">
                 <source src="{{asset('home.mp4')}}" type="video/mp4">
             </video>
             <!-- <div ><a class="btn-guards white-text modal-trigger" href="#modal1" >Find your home</a></div> -->
@@ -60,28 +60,29 @@
         </ul> -->   
         <ul class="cards container">
             <li>
-                <a href="" class="card">
-                <img src="{{ asset('images/country.png') }}" class="card__image" alt="" />
+                <a href="" class="card card1">
+                <img src="{{ asset('country.png') }}" class="card__image" alt="" />
+                
                 <div class="card__overlay">
                     <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                    <div class="card__header-text">
-                        <h3 class="card__title">Guards Country</h3>            
-                    </div>
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                                         
                     </div>    
+                </div>
+                <div class="card__header-text">
+                    <h3 class="card__title">Guards Country</h3>            
                 </div>
                 </a>      
             </li>
             <li>
-                <a href="" class="card">
-                <img src="{{ asset('images/london.png') }}" class="card__image" alt="" />
+                <a href="" class="card card2">
+                <img src="{{ asset('london.png') }}" class="card__image" alt="" />
                 <div class="card__overlay">        
                     <div class="card__header">
-                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
-                    <div class="card__header-text">
-                        <h3 class="card__title">Guards London</h3>
-                    </div>
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                                     
                     </div>                    
+                </div>
+                <div class="card__header-text">
+                    <h3 class="card__title">Guards London</h3>
                 </div>
                 </a>
             </li>    
@@ -235,6 +236,25 @@
             src="https://maps.googleapis.com/maps/api/js?place_id=ChIJQWTBZCkFdkgRhGer0CEJ8cA&libraries=places&key={{GMAPS_KEY}}&callback=initMap">
     </script>
     <script>
+         $(document).ready(function () {
+            
+            if ($('.home-video').visible(true)) {
+                // console.log('VISIBLE')
+                $('.home-video').get(0).play();
+            } else {
+                $('.home-video').get(0).play();
+            }
+
+            $(document).scroll(function() {
+                // console.log('scrolling')
+                if ($('.home-video').visible(true)) {
+                    $('.home-video').get(0).play();
+                } else {
+                    $('.home-video').get(0).play();
+                }
+            });
+        });
+
         let reviews=null,currentReview=0;
         function initMap() {
         const map = new google.maps.Map(document.getElementById("map"), {
@@ -327,7 +347,7 @@
 .card__image {      
   width: 100%;
   height: auto;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .card__overlay {
@@ -412,7 +432,10 @@
   -webkit-line-clamp: 3;
   overflow: hidden;
 }    
-.cards svg {
+/* .card1 svg {
+    fill: #0f553e !important;
+} */
+.card svg {
     fill: #152430 !important;
 }
 .card {
@@ -421,10 +444,10 @@
   align-items: center;
   box-shadow: 1px 1px 20px 3px #00000057;
 }
-.card1 img, .card3 img {
+/* .card1 img, .card3 img {
   max-width: 300px;
-}
-a.card.card1:hover {
+} */
+/* a.card.card1:hover {
   background: #0f553e;
 }
 
@@ -434,14 +457,16 @@ a.card.card2:hover {
 
 a.card.card3:hover {
   background: #040f28;
-}
+} */
 .card {  
   max-height: 140px;
 }
 ul.cards.container {
     /* display: none; */
 }
-
+ul.cards.container {
+    padding: 1rem 0;
+}
 </style>
 
 @section('footer')

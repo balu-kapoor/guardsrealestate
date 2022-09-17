@@ -10495,7 +10495,11 @@ div#files_list {
     height: 215px !important;
   }
   .scroll-to {
-    top: 170px;
+    display: none;
+  }
+  .card__header-text {
+      position: relative;
+      left: -25px;
   }
 }
 .row.adv-search.home-page-modal-row .tabs {
