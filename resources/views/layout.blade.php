@@ -101,6 +101,7 @@
 
     </div>
 </div>
+<a href="{{ url('valuation/online') }}" class="valuation__pop">Book Valuation</a>
 <a href="https://api.whatsapp.com/send?phone=+447936988095" id="whatsapp_call_button" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
 </a>

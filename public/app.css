@@ -10505,3 +10505,15 @@ div#files_list {
 .row.adv-search.home-page-modal-row .tabs {
   flex-direction: row;
 }
+.valuation__pop {
+    background: #152430;
+    color: #fff;
+    padding: 5px 10px;
+    transform: rotate(270deg);
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: -50px;
+    z-index: 9999999;
+    box-shadow: 3px 10px 20px 1px #0000005c;
+}
