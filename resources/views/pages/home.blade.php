@@ -32,7 +32,7 @@
 @section('page-body')
     <main >
         <div class="hero ">
-            <video muted autoplay poster="{{asset('images/hero1.jpg')}}"  class="home-video">
+            <video preload="none" autoplay="autoplay" loop="loop" poster="{{asset('images/hero1.jpg')}}"  class="home-video">
                 <source src="{{asset('home.mp4')}}" type="video/mp4">
             </video>
             <!-- <div ><a class="btn-guards white-text modal-trigger" href="#modal1" >Find your home</a></div> -->
@@ -234,7 +234,7 @@
 
 @section('page-js')
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?place_id=ChIJQWTBZCkFdkgRhGer0CEJ8cA&libraries=places&key=AIzaSyB7NbVetU5YcRlRUeaw_7Z21h8O8dFT-4A&callback=initMap">
+            src="https://maps.googleapis.com/maps/api/js?place_id=ChIJQWTBZCkFdkgRhGer0CEJ8cA&libraries=places&key={{ env('GMAP_KEY') }}&callback=initMap">
     </script>
     <script>
          <?php if(isset($_GET['location'])) : ?>
@@ -250,21 +250,21 @@
 
          $(document).ready(function () {
             
-            if ($('.home-video').visible(true)) {
-                // console.log('VISIBLE')
-                $('.home-video').get(0).play();
-            } else {
-                $('.home-video').get(0).play();
-            }
+            // if ($('.home-video').visible(true)) {
+            //     // console.log('VISIBLE')
+            //     $('.home-video').get(0).play();
+            // } else {
+            //     $('.home-video').get(0).play();
+            // }
 
-            $(document).scroll(function() {
-                // console.log('scrolling')
-                if ($('.home-video').visible(true)) {
-                    $('.home-video').get(0).play();
-                } else {
-                    $('.home-video').get(0).play();
-                }
-            });
+            // $(document).scroll(function() {
+            //     // console.log('scrolling')
+            //     if ($('.home-video').visible(true)) {
+            //         $('.home-video').get(0).play();
+            //     } else {
+            //         $('.home-video').get(0).play();
+            //     }
+            // });          
         });
 
         let reviews=null,currentReview=0;

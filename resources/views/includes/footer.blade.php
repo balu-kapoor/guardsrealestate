@@ -27,6 +27,7 @@
             </div>
             <div class="col m4 s12 contact">
                 <h5 class="amber-text text-darken-1">Contact</h5>
+                <p>Head Office</p>
                 <p>43 BERKELEY SQUARE<br>
                     LONDON<br>
                     W1J 5AP<br>
