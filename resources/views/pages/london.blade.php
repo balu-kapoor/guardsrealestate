@@ -141,7 +141,7 @@ header.site-header.header-fixed.d-flex.justify-content-center {
     background: #040f28;
 }
 .logo_header img {
-	max-width: 220px;
+	max-width: 180px;
 }
 .btm_footer {
 	display: grid;
