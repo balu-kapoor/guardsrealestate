@@ -479,6 +479,7 @@ ul.cards.container {
 ul.cards.container {
     padding: 1rem 0;
     padding-bottom: 0;
+    margin-bottom: -10px;
 }
 </style>
 
