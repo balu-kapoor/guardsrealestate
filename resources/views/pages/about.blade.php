@@ -36,9 +36,9 @@
 
                             <div class="about-first-row">
                                 <div class="text-row">
-                                    <p class="about-us-text p-l-text">Guards real estate is a boutique real estate agency based in Central London and primarily focussed on providing exceptional personal service to both clients and customer satisfaction. We pride ourselves on strong client confidentiality, integrity and professionalism. We aim to be completely transparent and we will make you aware of every step we organise towards achieving the target goal. We are here to take all the hustle away from you whether it is regarding managing, renting, letting, buying or selling a property. </p>
-                                    <p class=" p-l-text about-us-text">We are experts with a strong passion for real estate
-                                        and we will take care of your property and your needs as if you were one of us.</p>
+                                    <p class="about-us-text p-l-text">Guards real estate is a boutique real estate agency based in Central London & North Yorkshire, County Durham and surrounding areas. We primarily focus on providing exceptional personal service to both clients and customer satisfaction. We pride ourselves on strong client confidentiality, integrity and professionalism. We aim to be completely transparent and we will make you aware of every step we organise towards achieving the target goal. We are here to take all the hustle away from you whether it is regarding managing, renting, letting, buying or selling a property.
+ </p>
+                                    <p class=" p-l-text about-us-text">We are experts with a strong passion for real estate and we will take care of your property and your needs as if you were one of us.</p>
 
                                      <div class="icon-row-grid">
                                         <?php /* ?><div >
