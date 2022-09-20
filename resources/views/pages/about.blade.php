@@ -144,7 +144,7 @@
                         <li>
                             <div class="collapsible-header"><i class="material-icons">add</i>Who is Guards Real Estate?</div>
                             <div class="collapsible-body">
-                                Guards Real Estate is a boutique agency with offices in Central London and in the City of London. We pride ourselves with content clients and customers from North, West, East and South London.</div>
+                            Guards Real Estate is a boutique agency with Guards London office covering Central London and the City of London, we also have Guards Country covering ; North Yorkshire , County Durham and surrounding areas. We pride ourselves with content clients nationwide.</div>
                         </li>
                         <li>
                             <div class="collapsible-header"><i class="material-icons">add</i>Why Choose Guards Real Estate?</div>
