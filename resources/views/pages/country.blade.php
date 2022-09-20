@@ -59,7 +59,7 @@
 			<!-- Site Header -->
 			<header class="site-header header-fixed d-flex justify-content-center">
 				<!-- Logo -->
-				<a href="#" class="logo_header">
+				<a href="{{ url('/') }}" class="logo_header">
 				<img src="https://fabrum.nz/guards/public/country_footer.png" alt="">
 				</a>
 			</header>
