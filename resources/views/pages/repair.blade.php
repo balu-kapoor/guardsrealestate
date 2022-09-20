@@ -21,7 +21,7 @@
             <!-- <img src="{{asset('images/serviceNew.jpg')}}" class="responsive-img "> -->
             <div class="header-row-heading">
                 <div class="header-row">
-                    <h1 class="main-heading-row-button guards-border guards-top-border guards-bottom-border">Repair & Maintenance</h1>
+                    <h1 class="main-heading-row-button guards-border guards-top-border guards-bottom-border">Report a repair</h1>
                 </div>
             </div>
         </div>

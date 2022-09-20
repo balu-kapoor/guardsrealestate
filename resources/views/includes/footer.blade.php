@@ -20,7 +20,7 @@
                     <li><a href="{{route('website-contact')}}">Get in touch</a></li>
                     <li><a  href="/payments">Payments</a></li>
                     <li><a  href="{{route('website-fees')}}">Fees & Terms</a></li>
-                    <li><a href="{{route('repair-maintenance')}}?list=L">Repair & Maintenance</a></li>
+                    <li><a href="{{route('repair-maintenance')}}?list=L">Report a repair</a></li>
                     <li><a href="/privacy">Privacy Policy</a></li>
                     <li><a href="{{route('website-certificates')}}" >Certificates</a></li>
                 </ul>

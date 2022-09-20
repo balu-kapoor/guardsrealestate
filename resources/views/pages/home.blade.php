@@ -60,7 +60,7 @@
         </ul> -->   
         <ul class="cards container">
             <li>
-                <a href="" class="card card1">
+                <a href="{{ url('guards-country') }}" class="card card1">
                 <img src="{{ asset('country.png') }}" class="card__image" alt="" />
                 
                 <div class="card__overlay">
@@ -74,7 +74,7 @@
                 </a>      
             </li>
             <li>
-                <a href="" class="card card2">
+                <a href="{{ url('guards-london') }}" class="card card2">
                 <img src="{{ asset('london.png') }}" class="card__image" alt="" />
                 <div class="card__overlay">        
                     <div class="card__header">
@@ -406,7 +406,7 @@
 .card__title {
   font-size: 1em;
   margin: 0 0 .3em;
-  color: #6A515E;
+  color: #fff;
 }
 
 .card__tagline {
@@ -431,12 +431,24 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
-}    
-/* .card1 svg {
-    fill: #0f553e !important;
-} */
+}   
+.card__header-text {
+    position: relative;
+    margin-left: 30px;
+}
+.card {
+    height: 140px !important;
+    margin-bottom: 0;
+} 
+.card1 {
+    background: #0f553e !important;
+}
+.card2 {
+    background: #040f28 !important;
+}
 .card svg {
     fill: #152430 !important;
+    display: none;
 }
 .card {
   display: flex;
@@ -466,6 +478,7 @@ ul.cards.container {
 }
 ul.cards.container {
     padding: 1rem 0;
+    padding-bottom: 0;
 }
 </style>
 

@@ -30,7 +30,7 @@
                         </li>
                         <li style=" -webkit-animation-duration: 1.1s;animation-duration: 1.1s;"><a href="/valuations" >Valuations</a></li>
                         <li style=" -webkit-animation-duration: 1.2s;animation-duration: 1.2s;">
-                        <li style=" -webkit-animation-duration: 1.6s;animation-duration: 1.6s;"><a href="{{route('repair-maintenance')}}">Repair And Maintenance</a></li>
+                        <li style=" -webkit-animation-duration: 1.6s;animation-duration: 1.6s;"><a href="{{route('repair-maintenance')}}">Report a repair</a></li>
                         <li style=" -webkit-animation-duration: 1.6s;animation-duration: 1.6s;">
                             <div class="collapsible-header"><i class="material-icons">add</i>About Us</div>
                             <ul class="collapsible-body">

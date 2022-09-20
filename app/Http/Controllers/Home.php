@@ -99,5 +99,12 @@ class Home extends Controller
     
         return response()->json($resp);
     }
-    
+
+    public function country() {       
+        return view('pages.country', ['filterOptions' => $this->getSearchFilterOptionsForView()]);
+    }  
+
+    public function london() {       
+        return view('pages.london', ['filterOptions' => $this->getSearchFilterOptionsForView()]);
+    }  
 }
