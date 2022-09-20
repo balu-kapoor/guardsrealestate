@@ -238,11 +238,14 @@
     </script>
     <script>
          <?php if(isset($_GET['location'])) : ?>
-
-                $(document).ready(function(){
-                    $('.modal-trigger').trigger('click');
-                });
-            
+            $(document).ready(function () {
+            //     const elem = document.getElementById('modal1');
+            //     const instance = M.Modal.init(elem, {dismissible: false});
+            //     instance.open();
+                setTimeout(() => {
+                    $('#modal1').modal('open'); 
+                }, 3000);
+            });
         <?php endif; ?>
 
          $(document).ready(function () {
