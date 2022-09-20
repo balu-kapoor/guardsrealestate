@@ -84,7 +84,7 @@
 			<!-- Site Footer -->
 			<footer class="site-footer footer-fixed footer-mobile-dark footer-light">
 				<div class="container-fluid align-items-md-center justify-content-md-between btm_footer">
-					<div><img class="footer_logo" src="https://fabrum.nz/guards/public/country_footer.png" alt=""></div>
+					<div><img class="footer_logo" src="https://fabrum.nz/guards/public/images/country.png" alt=""></div>
 					<div>© 2022 Guards Country - All Rights Reserved</div>
 					<div>
 						<h5>Contact</h5>
@@ -156,6 +156,7 @@ footer {
 }
 @media only screen and (max-width: 600px) {
 	.btm_footer {
+        text-align: center;
 		grid-template-columns: auto !important;
 	}
 }
