@@ -32,7 +32,7 @@
 @section('page-body')
     <main >
         <div class="hero ">
-            <video loop muted playsinline  poster="{{asset('images/hero1.jpg')}}"  class="home-video">
+            <video muted autoplay poster="{{asset('images/hero1.jpg')}}"  class="home-video">
                 <source src="{{asset('home.mp4')}}" type="video/mp4">
             </video>
             <!-- <div ><a class="btn-guards white-text modal-trigger" href="#modal1" >Find your home</a></div> -->
@@ -68,9 +68,9 @@
                     <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                                         
                     </div>    
                 </div>
-                <div class="card__header-text">
+                <!-- <div class="card__header-text">
                     <h3 class="card__title">Guards Country</h3>            
-                </div>
+                </div> -->
                 </a>      
             </li>
             <li>
@@ -81,9 +81,9 @@
                     <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                                     
                     </div>                    
                 </div>
-                <div class="card__header-text">
+                <!-- <div class="card__header-text">
                     <h3 class="card__title">Guards London</h3>
-                </div>
+                </div> -->
                 </a>
             </li>    
         </ul>     
@@ -233,7 +233,7 @@
 
 @section('page-js')
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?place_id=ChIJQWTBZCkFdkgRhGer0CEJ8cA&libraries=places&key={{GMAPS_KEY}}&callback=initMap">
+            src="https://maps.googleapis.com/maps/api/js?place_id=ChIJQWTBZCkFdkgRhGer0CEJ8cA&libraries=places&key=AIzaSyB7NbVetU5YcRlRUeaw_7Z21h8O8dFT-4A&callback=initMap">
     </script>
     <script>
          $(document).ready(function () {
@@ -480,6 +480,9 @@ ul.cards.container {
     padding: 1rem 0;
     padding-bottom: 0;
     margin-bottom: -10px;
+}
+.card:hover {
+    border: 2px solid #e0ab25;
 }
 </style>
 
