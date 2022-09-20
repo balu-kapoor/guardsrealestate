@@ -153,6 +153,11 @@ footer {
 .preloader .circle-side {
   border-color: #d9a852;
 }
+@media only screen and (max-width: 600px) {
+	.btm_footer {
+		grid-template-columns: auto !important;
+	}
+}
 </style>
 	</body>
 </html>
