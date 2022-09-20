@@ -58,6 +58,7 @@
             </li>
              
         </ul> -->   
+       
         <ul class="cards container">
             <li>
                 <a href="{{ url('guards-country') }}" class="card card1">
@@ -236,6 +237,14 @@
             src="https://maps.googleapis.com/maps/api/js?place_id=ChIJQWTBZCkFdkgRhGer0CEJ8cA&libraries=places&key=AIzaSyB7NbVetU5YcRlRUeaw_7Z21h8O8dFT-4A&callback=initMap">
     </script>
     <script>
+         <?php if(isset($_GET['location'])) : ?>
+
+                $(document).ready(function(){
+                    $('.modal-trigger').trigger('click');
+                });
+            
+        <?php endif; ?>
+
          $(document).ready(function () {
             
             if ($('.home-video').visible(true)) {

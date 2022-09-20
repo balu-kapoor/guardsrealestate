@@ -42,9 +42,11 @@
 		<div class="global-overlay">
 			<div class="overlay-inner bg-image-holder bg-cover">
 				<!-- <img src="https://fabrum.nz/guards/public/bg2.jpg" alt="background"> -->
-				<video muted autoplay loop poster="https://fabrum.nz/guards/public/bg2.jpg"  class="home-video">
-                	<source src="{{asset('london.mp4')}}" type="video/mp4">
-				</video>
+				<div class="video-container">
+					<video muted autoplay loop poster="https://fabrum.nz/guards/public/bg2.jpg"  class="home-video">
+						<source src="{{asset('london.mp4')}}" type="video/mp4">
+					</video>
+				</div>
 			</div>
 			<div class="overlay-inner bg-black opacity-70"></div>
 		</div>
@@ -71,7 +73,7 @@
 				<div class="container align-self-center text-white">
 					<!-- <h1 class="text-center mb-3">We are launching soon</h1> -->
 					<!-- <p class="lead text-center mb-5">5 Yarm Rd, Stockton-on-Tees TS18 3SF</p> -->
-					<div class="text-center"><a href="{{ url('/') }}" class="btn-guards">Find Your Home</a></div>
+					<div class="text-center"><a href="{{ url('/') }}?location=true" class="btn-guards">Find Your Home</a></div>
 					<div class="row">
 						<div class="col-12 col-md-8 col-lg-7 mx-lg-auto">
 							<div class="subscribe-form">
@@ -207,8 +209,29 @@ footer {
 .btn-guards:hover:before, .btn-guards:focus:before, .btn-guards:active:before, .btn-guards:hover:after, .btn-guards:focus:after, .btn-guards:active:after {
     right: -160%;
 }
-video {
-	width: 100%;
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  object-fit: cover;
 }
 </style>
 	</body>
