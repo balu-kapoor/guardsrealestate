@@ -10478,6 +10478,9 @@ div#files_list {
 }
 
 @media only screen and (max-width: 600px) {
+  ul.cards.container li:first-child {
+    margin-bottom: -15px;
+}
 #valuation_card_new h4{
   text-align: center;
 }
