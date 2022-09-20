@@ -89,7 +89,7 @@
 						<h5>Contact</h5>
 						43 BERKELEY SQUARE<br> LONDON <br> W1J 5AP
 					</div>
-					<div>Protecting your life investments</div>
+					<div class="life">Protecting your life investments</div>
 					
 				</div>
 			</footer>
@@ -157,6 +157,9 @@ footer {
 	.btm_footer {
         text-align: center;
 		grid-template-columns: auto !important;
+	}
+	.life {
+		display: none;
 	}
 }
 </style>

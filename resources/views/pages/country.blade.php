@@ -90,7 +90,7 @@
 						<h5>Contact</h5>
 						5 Yarm Rd<br> Stockton-on-Tees <br> TS18 3SF
 					</div>
-					<div>Protecting your life investments</div>
+					<div class="life">Protecting your life investments</div>
 					
 				</div>
 			</footer>
@@ -159,6 +159,9 @@ footer {
         text-align: center;
 		grid-template-columns: auto !important;
 	}
+    .life {
+        display: none;
+    }
 }
 </style>
 	</body>
