@@ -223,7 +223,7 @@
                 <a href="http://www.guardsrealestate.com/"><img class="responsive-img" src="{{asset('images/myDeposits.png')}}"></a>
                 <a href="http://www.guardsrealestate.com/"><img class="responsive-img" src="{{asset('images/prime.png')}}"></a>
                 <a href="http://www.guardsrealestate.com/"><img class="responsive-img" src="{{asset('images/protected.png')}}"></a>
-                <a href="http://www.guardsrealestate.com/"><img class="responsive-img img-bw" src="{{asset('images/onthemarket.jpeg')}}"></a>
+                <a href="http://www.guardsrealestate.com/"><img class="responsive-img img-bw" src="{{asset('images/onthemarket2.jpeg')}}"></a>
             </div>
         </div>
         <div id="map"></div>
