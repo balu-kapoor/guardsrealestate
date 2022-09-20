@@ -434,7 +434,7 @@
 }   
 .card__header-text {
     position: relative;
-    margin-left: 30px;
+    margin-left: 60px;
 }
 .card {
     height: 140px !important;

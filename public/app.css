@@ -10478,6 +10478,9 @@ div#files_list {
 }
 
 @media only screen and (max-width: 600px) {
+.valuation_card_new h4{
+  text-align: center;
+}
   .collapsible-header, .collapsible li A {
       font-size: 18px !important;
   }
