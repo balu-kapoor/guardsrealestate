@@ -32,7 +32,7 @@
 @section('page-body')
     <main >
         <div class="hero ">           
-            <video controls="none" preload="none" autoplay="autoplay" loop="loop" muted poster="{{asset('images/hero1.jpg')}}"  class="home-video">
+            <video autoplay muted poster="{{asset('images/hero1.jpg')}}"  class="home-video">
                 <source src="{{asset('home.mp4')}}" type="video/mp4">
             </video>
             <!-- <div ><a class="btn-guards white-text modal-trigger" href="#modal1" >Find your home</a></div> -->
