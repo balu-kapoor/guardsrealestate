@@ -170,7 +170,7 @@
             setTimeout(() => {
                 google.maps.event.addDomListener(window, 'load', initMap);
                 google.maps.event.addDomListener(window, 'load', initMap2);
-            }, 1500);
+            }, 3000);
         });
     </script>
     <style>
