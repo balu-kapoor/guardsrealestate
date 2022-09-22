@@ -28,11 +28,11 @@
 @section('navigation')
     @include('includes.navigation')
 @endsection
-
+        
 @section('page-body')
     <main >
-        <div class="hero ">
-            <video preload="none" autoplay="autoplay" loop="loop" poster="{{asset('images/hero1.jpg')}}"  class="home-video">
+        <div class="hero ">           
+            <video preload="none" autoplay="autoplay" loop="loop" muted poster="{{asset('images/hero1.jpg')}}"  class="home-video">
                 <source src="{{asset('home.mp4')}}" type="video/mp4">
             </video>
             <!-- <div ><a class="btn-guards white-text modal-trigger" href="#modal1" >Find your home</a></div> -->
@@ -234,22 +234,21 @@
 
 @section('page-js')
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?place_id=ChIJQWTBZCkFdkgRhGer0CEJ8cA&libraries=places&key={{ env('GMAP_KEY') }}&callback=initMap">
+            src="https://maps.googleapis.com/maps/api/js?place_id=ChIJQWTBZCkFdkgRhGer0CEJ8cA&libraries=places&key={{GMAPS_KEY}}&callback=initMap">
     </script>
     <script>
          <?php if(isset($_GET['location'])) : ?>
             $(document).ready(function () {
             //     const elem = document.getElementById('modal1');
             //     const instance = M.Modal.init(elem, {dismissible: false});
-            //     instance.open();
+            //     instance.open();         
                 setTimeout(() => {
                     $('#modal1').modal('open'); 
                 }, 3000);
             });
         <?php endif; ?>
 
-         $(document).ready(function () {
-            
+         $(document).ready(function () {                     
             // if ($('.home-video').visible(true)) {
             //     // console.log('VISIBLE')
             //     $('.home-video').get(0).play();
