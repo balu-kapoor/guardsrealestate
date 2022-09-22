@@ -162,15 +162,15 @@
         }
 
     </script>
-    <script async defer
+    <script
             src="https://maps.googleapis.com/maps/api/js?key={{GMAPS_KEY}}&?sensor=false">
     </script>
     <script>
         $(document).ready(() => {
-            setTimeout(() => {
+            // setTimeout(() => {
                 google.maps.event.addDomListener(window, 'load', initMap);
                 google.maps.event.addDomListener(window, 'load', initMap2);
-            }, 3000);
+            // }, 3000);
         });
     </script>
     <style>
