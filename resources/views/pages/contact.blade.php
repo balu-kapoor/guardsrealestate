@@ -167,8 +167,10 @@
     </script>
     <script>
         $(document).ready(() => {
-            google.maps.event.addDomListener(window, 'load', initMap);
-            google.maps.event.addDomListener(window, 'load', initMap2);
+            setTimeout(() => {
+                google.maps.event.addDomListener(window, 'load', initMap);
+                google.maps.event.addDomListener(window, 'load', initMap2);
+            }, 3000);
         });
     </script>
     <style>
