@@ -89,6 +89,9 @@
                     <div class="col s12">
                         <div id="map"></div>
                     </div>
+                    <div class="col s12">
+                        <div id="map2"></div>
+                    </div>
                 </div>
 
             </div>
@@ -129,15 +132,51 @@
                 });
             map.setStreetView(panorama);
         }
+        function initMap2() {
+            $('#street-view').addClass('not-selected');
+            $('#map-view').removeClass('not-selected');
+                let h_location = {lat:54.545697,lng:-1.3380561}
+                map = new google.maps.Map(
+                    document.getElementById('map2'), {zoom: 13, center: h_location});
+                // The marker, positioned at Uluru
+                let marker = new google.maps.Marker({
+                    position: h_location,
+                    map: map,
+                    icon:'{{asset('images/guards_pin.png')}}'
+                });
+        }
+        function switchToStreetView2() {
+            //new google.maps.StreetViewPanorama(container, panoramaOptions);
+            $('#map-view').addClass('not-selected');
+            $('#street-view').removeClass('not-selected');
+
+            var panorama = new google.maps.StreetViewPanorama(
+                document.getElementById('map2'), {
+                    position: h_location,
+                    pov: {
+                        heading: 34,
+                        pitch: 10
+                    }
+                });
+            map.setStreetView(panorama);
+        }
+
     </script>
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key={{GMAPS_KEY}}&callback=initMap">
+            src="https://maps.googleapis.com/maps/api/js?key={{GMAPS_KEY}}&?sensor=false">
+    </script>
+    <script>
+        $(document).ready(() => {
+            google.maps.event.addDomListener(window, 'load', initMap);
+            google.maps.event.addDomListener(window, 'load', initMap2);
+        });
     </script>
     <style>
         /* Set the size of the div element that contains the map */
-        #map {
+        #map, #map2 {
             height: 400px;  /* The height is 400 pixels */
             width: 100%;  /* The width is the width of the web page */
+            margin-bottom: 2rem;
         }
     </style>
 @endsection
