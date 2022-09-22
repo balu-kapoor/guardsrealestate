@@ -324,6 +324,7 @@
         })
         
         $('.confirm-button').click(function(){
+            
             $("#repair-form").submit();
             return false;
         });
@@ -400,6 +401,9 @@
         [type=checkbox]:not(:checked), [type=checkbox]:checked {
             position: relative !important;
             opacity: 1;
+        }
+        #modal1 select {
+            display: none !important;
         }
         input[type="checkbox"]:checked {
             background-color: orange !important;

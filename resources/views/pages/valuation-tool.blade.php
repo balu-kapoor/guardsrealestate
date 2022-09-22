@@ -403,6 +403,9 @@
             $('.custom-modal').removeClass('show-modal');
             return false;
     })
+    $('.modal-trigger').click(() => {
+        $('#modal1').find('#lettings-form').css('display', 'block');
+    });
     </script>
     <script type="text/javascript" src="{{ asset('/js/valuation.js') }}"></script>
     <script type="text/javascript" src="{{ asset('/js/homeValuation.js') }}"></script>

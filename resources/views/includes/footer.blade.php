@@ -27,11 +27,17 @@
             </div>
             <div class="col m4 s12 contact">
                 <h5 class="amber-text text-darken-1">Contact</h5>
-                <p>Head Office</p>
+                <p style="text-transform: uppercase;">Head Office</p>
+                <p style="text-transform: uppercase;">North Yorkshire</p>
                 <p>43 BERKELEY SQUARE<br>
                     LONDON<br>
                     W1J 5AP<br>
                     <br>
+                    <p style="text-transform: uppercase;">north yorkshire</p>
+                    <p style="text-transform: uppercase;">5 Yarm Rd<br>
+                        Stockton-on-Tees<br>
+                        TS18 3SF
+                    </p>
                     <strong>T</strong>
                     <a href="tel:+442036331271">+44 (0) 20 3633 1271</a>
                 </p>
@@ -53,7 +59,7 @@
             </div>
 
             
-            <div id="lettings-form" class="col s12 tab-content">
+            <div id="lettings-form" class="col s12 tab-content active" style="display: block">
                 <form action="{{route('website-property-search')}}" method="get">
                     <input type="hidden" name="list" value="L">
                 <div class="col s12">
