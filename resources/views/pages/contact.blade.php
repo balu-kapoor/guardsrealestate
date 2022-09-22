@@ -70,10 +70,10 @@
                         <p class="contact-text p-l-text">If you are a Landlord, Private Seller, Developer, Investor, Buyer or a Tenant, please don't hesitate to contact us via phone or email. Our details are below:</p>
                         <div class="contact-row-block">
                             <p class="heading">Address</p>
-                            <p>Head office</p>
+                            <p style="text-transform: uppercase;">Head office</p>
                             <p class="content p-l-text">43 Berkeley Square, London  W1J 5AP</p>
                             <p style="text-transform: uppercase;">north yorkshire</p>
-                            <p class="content p-l-text">43 Berkeley Square, London  W1J 5AP</p>
+                            <p class="content p-l-text">5 Yarm Rd Stockton-on-Tees TS18 3SF</p>
                         </div>
                         <div class="contact-row-block extra-top-space">
                             <p class="heading">Phone</p>
