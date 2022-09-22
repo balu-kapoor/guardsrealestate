@@ -10,7 +10,7 @@
 define('LARAVEL_START', microtime(true));
 if(!defined('CONSTANTS_DEFINED'))
 {
-    define('GMAPS_KEY','AIzaSyDblKvSwohAT-fVRbVyrtfAO4eVPenZbJM');
+    define('GMAPS_KEY','AIzaSyB7NbVetU5YcRlRUeaw_7Z21h8O8dFT-4A');
     define('CONSTANTS_DEFINED',true);
     define('PROPERTY_PRICE_BRACKET_LETTING',500);
     define('PROPERTY_PRICE_BRACKET_SALE',100000);
