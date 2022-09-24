@@ -32,7 +32,7 @@
 @section('page-body')
     <main >
         <div class="hero ">           
-            <video loop muted playsinline poster="{{asset('images/hero1.jpg')}}"  class="home-video">
+            <video autoplay loop muted playsinline poster="{{asset('images/hero1.jpg')}}"  class="home-video">
                 <source src="{{asset('home.mp4')}}" type="video/mp4">
             </video>
             <!-- <div ><a class="btn-guards white-text modal-trigger" href="#modal1" >Find your home</a></div> -->
@@ -246,25 +246,7 @@
                     $('#modal1').modal('open'); 
                 }, 3000);
             });
-        <?php endif; ?>
-
-         $(document).ready(function () {                     
-            // if ($('.home-video').visible(true)) {
-            //     // console.log('VISIBLE')
-            //     $('.home-video').get(0).play();
-            // } else {
-            //     $('.home-video').get(0).play();
-            // }
-
-            // $(document).scroll(function() {
-            //     // console.log('scrolling')
-            //     if ($('.home-video').visible(true)) {
-            //         $('.home-video').get(0).play();
-            //     } else {
-            //         $('.home-video').get(0).play();
-            //     }
-            // });          
-        });
+        <?php endif; ?>        
 
         let reviews=null,currentReview=0;
         function initMap() {
