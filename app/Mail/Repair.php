@@ -36,6 +36,6 @@ class Repair extends Mailable
     public function build()
     {
         return $this->subject('GuardsRealEstate Website: Repair Request')
-            ->markdown('emails.Repair');
+            ->markdown('emails.repair');
     }
 }
