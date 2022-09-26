@@ -86,7 +86,8 @@ class Home extends Controller
                                     $file->move($path, $name);
                             
                                     $filename = $path.'/'.$name; 
-                                    array_push($images, $filename);
+                                    array_push($images, $name);                                    
+
                                 } 
                             }
                                               
@@ -102,7 +103,6 @@ class Home extends Controller
             $i++;
         }    
         // echo $message;  
-        // exit;
         Mail::to('brkapoor11@gmail.com')->send(new Repair($message, $images));
         return view('pages.create-issue-success', ['filterOptions' => $this->getSearchFilterOptionsForView()]);
     }

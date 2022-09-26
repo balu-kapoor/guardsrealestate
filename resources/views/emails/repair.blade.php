@@ -4,7 +4,7 @@ You have a new repair request!
 
 @if(is_array($formData))
 @foreach($formData as $key=>$value)
-{{$key}} : {{$value}}
+<p><b>{{$key}}</b> : {{$value}}</p>
 @endforeach
 @else
 {!! $formData !!}
@@ -12,7 +12,7 @@ You have a new repair request!
 
 @if(is_array($images))
 @foreach($images as $key=>$value)
-<img src="{{$value}}" /> 
+<img src="{{ url('/') }}/uploads/{{$value}}" /> 
 @endforeach
 @else
 {!! $images !!}

@@ -24,7 +24,7 @@
             <p>You will receive a copy of your issue by email shortly. (Don't forget to check your spam folder)</p>
             <p>Things to do next:</p>
             <ul>
-                <li><a href="#">Report another issue</a></li>
+                <li><a href="{{ url('/repair-maintenance') }}">Report another issue</a></li>
                 <li><a href="#">Help us improve our repair reporting service for you. It takes less than a minute!</a></li>
             </ul>
             <a class="home-button" href="{{ url('/') }}">Home</a>
