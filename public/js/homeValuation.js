@@ -3,6 +3,7 @@ let home_step_data = {
     prevStepNo : 0
 };
 
+let form_data3 = {};
 var example = flatpickr('#flatpickr');
 
 $('#flatpickr').change(function() {
@@ -18,6 +19,8 @@ $('.time > button').click(function(){
     $('.filler').css('width', `${home_step_data.nextStepNo * 12.5}%`);
     home_step_data.nextStepNo += 1;
     home_step_data.prevStepNo += 1;
+    form_data3.data = $(this).val();
+    form_data3.time = $(this).val();
     $('.home_next_button').addClass('disabled'); 
 })
 
@@ -29,6 +32,7 @@ $('.home_collection_2 > button').click(function(){
     home_step_data.nextStepNo += 1;
     home_step_data.prevStepNo += 1;
     $(`.all_home_steps > div:nth-child(${home_step_data.nextStepNo})`).removeClass('hidden');
+    form_data3.legal_owner = $(this).val();
     $('.home_next_button').addClass('disabled'); 
 })
 
@@ -40,6 +44,7 @@ $('.home_collection_3 > button').click(function(){
     home_step_data.nextStepNo += 1;
     home_step_data.prevStepNo += 1;
     $(`.all_home_steps > div:nth-child(${home_step_data.nextStepNo})`).removeClass('hidden');
+    form_data3.valuation_type = $(this).val();
     $('.home_next_button').addClass('disabled'); 
 })
 
@@ -53,11 +58,23 @@ $('.home_btn_collection_6 > button').click(function(){
     // home_step_data.prevStepNo += 1;
     // $(`.all_home_steps > div:nth-child(${home_step_data.nextStepNo})`).removeClass('hidden');
     // $('.home_next_button').addClass('disabled'); 
+    form_data3.contact_situation = $(this).val();
     $('.result-loader').removeClass('hidden');
     setTimeout(function(){
         $('.result-loader').addClass('hidden');
         $('.home_final_step').removeClass('hidden');
     }, 3000);
+    $.ajax({
+        type:'POST',
+        url:'/bookhomevaluation',
+        data:{form_data3},
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success:function(data){
+            console.log(data);
+        } 
+    })
 })
 
 $('.home_next_button').click(function() {
@@ -142,6 +159,7 @@ $(document).on("click", ".all_home_steps .address_results2 li", function(){
     home_step_data.prevStepNo += 1;
     $('.all_home_steps > div').addClass('hidden');
     $(`.all_home_steps > div:nth-child(${home_step_data.nextStepNo})`).removeClass('hidden');
+    form_data3.address = $(this).attr("data-address");
     // $('.home_next_button').removeClass('disabled');
 })
 
@@ -159,6 +177,8 @@ $('input[name="home_first_name"], input[name="home_last_name"]').on("change past
         $('.home_next_button').removeClass('disabled');       
         // step_count++; 
         // console.log('control is here now')
+        form_data3.first_name = $('input[name="home_first_name"]').val();
+        form_data3.last_name = $('input[name="home_last_name"]').val();
         return false;
     }
     // console.log('test this input')
@@ -177,6 +197,7 @@ $('#home_email').on("change paste keyup", function() {
     if($('#home_phone').val != '') {
         $('.home_next_button').removeClass('disabled');
     }
+    form_data3.email = $('#home_email').val();
 })
 $('#home_phone').on("change paste keyup", function() {
     // console.log('test input change')
@@ -189,5 +210,6 @@ $('#home_phone').on("change paste keyup", function() {
     if($('#home_email').val != '') {
         $('.home_next_button').removeClass('disabled');
     }
+    form_data3.phone = $('#home_phone').val();
     
 })

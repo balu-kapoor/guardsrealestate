@@ -4,7 +4,7 @@ You have a new valuation request!
 
 @if(!empty($formData))
 @if(is_array($formData))
-@foreach($formData['form_data2'] as $key=>$value)
+@foreach($formData['form_data3'] as $key=>$value)
 __{{$key}}__: {{$value}}
 
 @endforeach

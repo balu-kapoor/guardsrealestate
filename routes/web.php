@@ -39,6 +39,8 @@ Route::get('/certificates',  'About@certificate')->name('website-certificates');
 
 Route::post('/contact/get-in-touch','Contact@getInTouch')->name('website-contactus-form');
 Route::post('/fees/submit-enquiry','About@SubmitEnquiry')->name('submit-enquiry');
+Route::post('/bookvaluation','Home@sendValuationMail')->name('book-valuation-mail');
+Route::post('/bookhomevaluation','Home@sendHomeValuationMail')->name('book-home-valuation-mail');
 Route::fallback('CustomPage@index');
 
 Route::get('/guards-country', 'Home@country')->name('country');

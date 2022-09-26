@@ -10478,6 +10478,12 @@ div#files_list {
 }
 
 @media only screen and (max-width: 600px) {
+  .custom-modal-content {
+    width: 95% !important;
+  }
+  .repair-success {
+    margin: 1rem 1rem !important;
+  }
   ul.cards.container li:first-child {
     margin-bottom: -15px;
 }

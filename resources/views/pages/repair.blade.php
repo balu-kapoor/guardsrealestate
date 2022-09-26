@@ -26,7 +26,7 @@
             </div>
         </div>
         <h6 class="steps"><span>1</span>What is the problem?</h6>
-        <form id="repair-form" action="{{ route('send-repair-issue') }}" method="post">
+        <form id="repair-form" action="{{ route('send-repair-issue') }}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="all_steps first-step">
                 <div class="repair">
@@ -73,6 +73,7 @@
                     <button class="back" data-class="fourth-step"><i class="fa fa-level-up" aria-hidden="true"></i>Back</button><button type="submit" class="next" data-class="final-step"><i class="fa fa-level-down" aria-hidden="true"></i>Submit Issue</button>
                 </div>
             </div>
+            <input type="hidden" name="categories" id="cat" value="test" />
         </form>      
 <!-- Modal -->
 @include('includes.confirm-modal')
@@ -299,6 +300,33 @@
                 $('.hide-if-tenant-present').show();
             }
         })
+
+        // $('#TenantPresence .radio-nice input').click(function(){
+        //     let checked = $(this).prev().val();
+        //     // console.log('check label click event')
+        //     if(checked == 'true') {
+        //         $('.hide-if-tenant-present').hide();
+        //     } else {
+        //         $('.hide-if-tenant-present').show();
+        //     }
+        // })
+
+        let form_data = {
+            categories : []
+        };
+
+        $(document).on('click', '.repair-item', function () {
+            form_data.categories.push($(this).find('p').html());
+            $('#cat').val(JSON.stringify(form_data));
+            // console.log(form_data)
+
+        })
+
+        $(document).on('click', '.last-item', function () {            
+           form_data.problem = $(this).find('p').html();
+           $('#cat').val(JSON.stringify(form_data));
+
+        })
        
         // modal
         const modal = document.querySelector(".custom-modal");
@@ -326,6 +354,7 @@
         $('.confirm-button').click(function(){
             
             $("#repair-form").submit();
+
             return false;
         });
 

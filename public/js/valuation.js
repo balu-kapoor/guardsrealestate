@@ -38,6 +38,8 @@
         steps_data.nextStep = $(this).val();
         steps_data.stepSecond = $(this).val();
         form_data.property_type = $(this).val();
+        form_data2.property_type = $(this).val();
+        
         $('.steps > div').addClass('hidden');
         $(`.${steps_data.stepName}`).removeClass('hidden');  
 
@@ -59,6 +61,7 @@
         steps_data.prevStep = parent;
         steps_data.nextStep = 'rooms';
         form_data.property_sub_type = $(this).val();
+        form_data2.property_sub_type = $(this).val();
         $('.steps > div').addClass('hidden');
         $(`.${steps_data.nextStep}`).removeClass('hidden');  
         
@@ -80,6 +83,7 @@
         steps_data.nextStep = 'postcode'; 
         $('.steps > div').addClass('hidden');
         form_data.bedrooms = $(this).val();
+        form_data2.bedrooms = $(this).val();
         $(`.${steps_data.nextStep}`).removeClass('hidden');  
         $('.next_button').addClass('disabled');
         $('.filler').css('width', `${steps_data.nextStepProgress}%`);
@@ -107,14 +111,17 @@
         let post_code = $(this).data('postcodekey');
         let post_key = post_code.substring(0, 8);
         form_data.full = `${full_addr}, ${post_key}`;
+        form_data2.full = `${full_addr}, ${post_key}`;
         postcode_lookup(post_code);
         let town = $(this).data('address').split(",");
         let town_result = town[town.length - 1];
         let address_result = town[0];
         form_data.address1 = address_result;
+        form_data2.address1 = address_result;
         
         form_data.town = town_result;
-        console.log(form_data)
+        form_data2.town = town_result;
+        // console.log(form_data)
         // $('.prev_button').removeClass('hide_button');  
         step_count++; 
     })
@@ -153,11 +160,12 @@
         $('.filler').css('width', `${steps_data.nextStepProgress}%`);
         $('.state').html(`${steps_data.nextStepNo}/10`);
         form_data.contact_situation = $(this).val();
+        form_data2.contact_situation = $(this).val();
         $('.prev_button').removeClass('hide_button');  
         // progress bar for final result
         $('.result-loader').removeClass('hidden');
         $('.valuation_nav').hide();
-        getvaluation(form_data);
+        getvaluation(form_data, form_data2);
         // setTimeout(()=> {
         //     $('.result-loader').addClass('hidden');
         //     $('.address').html(form_data.full);
@@ -303,6 +311,7 @@
             $('.next_button').removeClass('disabled');
             // step_count++; 
             // console.log(step_count)
+            form_data2.email = $('#step_email').val();
             return false;
         }
         
@@ -325,7 +334,9 @@
             }
             $('.next_button').removeClass('disabled');
             form_data.first_name = 'sarmad';
+            form_data2.first_name = $('input[name="first_name"]').val();
             form_data.last_name = 'gafoor';
+            form_data2.last_name = $('input[name="last_name"]').val();
             // step_count++; 
             // console.log(form_data)
             return false;
@@ -348,7 +359,8 @@
             steps_data.prevStepNo = 8;
             steps_data.prevStep = 'phone';
             steps_data.nextStep = 'situation';     
-            form_data.phone = $(this).val();           
+            form_data.phone = 6666666666;//$(this).val();           
+            form_data2.phone = $(this).val();           
             $('.next_button').removeClass('disabled');
             // step_count++; 
             console.log(step_count)

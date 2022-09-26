@@ -6,6 +6,11 @@ use App\Models\Properties\GB_PropertySync;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Http;
+use App\Mail\BookValuation;
+use App\Mail\HomeBookValuation;
+use App\Mail\Repair;
+use Illuminate\Support\Facades\Mail;
+use File;
 
 class Home extends Controller
 {
@@ -39,7 +44,66 @@ class Home extends Controller
     }
 
     public function sendRepairIssue(Request $request) {
-        // dd($request->all());
+        // dd($request->all()); 
+        $i = 0;
+        $len = count($request->all());
+        $message = [];
+        $images = [];
+        foreach($request->all() as $key => $val) {
+            // echo $i;
+            if($val != null) {
+                if ($key == '_token' || $key == 'agreeTerms') {
+                   continue;
+                } else {
+                    if($key == 'categories') {
+                        $category = json_decode($val);
+                        $message['Category']= $category->categories[0];
+                        if(count($category->categories) == 2) {   
+                           
+                            $message['Subcategory']= $category->categories[1];                        
+                        }
+                       
+                        if(count($category->categories) == 3) {
+                            $message['Type']= $category->categories[2];                        
+                                                   
+                        }
+                        // $message .=_r();
+                        $message['Problem'] = $category->problem;
+                       
+                    } else {
+                        if($key == 'files') {
+                            $files = $request->file('files');
+                            if($request->hasFile('files')) {
+                                foreach($files as $file){
+                                    $path = public_path('uploads');
+                            
+                                    $name = time().'.'.$file->getClientOriginalExtension();
+                            
+                                    // create folder
+                                    if(!File::exists($path)) {
+                                        File::makeDirectory($path, $mode = 0777, true, true);
+                                    }
+                                    $file->move($path, $name);
+                            
+                                    $filename = $path.'/'.$name; 
+                                    array_push($images, $filename);
+                                } 
+                            }
+                                              
+                        } else {
+                            $label = preg_replace('/(?<!\ )[A-Z]/', ' $0', $key);
+                            $message[$label] = $val;
+                            // print_r($val);                            
+                        }
+                    }
+                   
+                }                                              
+            }
+            $i++;
+        }    
+        // echo $message;  
+        // exit;
+        Mail::to('brkapoor11@gmail.com')->send(new Repair($message, $images));
         return view('pages.create-issue-success', ['filterOptions' => $this->getSearchFilterOptionsForView()]);
     }
 
@@ -100,6 +164,32 @@ class Home extends Controller
         return response()->json($resp);
     }
 
+    public function sendValuationMail(Request $request) {
+        // $request->validate([
+        //     'name'  => 'required|string',
+        //     'email'  => 'required|email',
+        //     'phone'  => 'required',
+        // ]);
+        if(is_array($request->all())) {
+            Mail::to('brkapoor11@gmail.com')->send(new BookValuation($request->all()));
+        }
+       
+       return response()->json('success with mail');
+    }
+
+    public function sendHomeValuationMail(Request $request) {
+        // $request->validate([
+        //     'name'  => 'required|string',
+        //     'email'  => 'required|email',
+        //     'phone'  => 'required',
+        // ]);
+        if(is_array($request->all())) {
+            Mail::to('brkapoor11@gmail.com')->send(new HomeBookValuation($request->all()));
+        }
+       
+       return response()->json('success with mail');
+    }
+
     public function country() {       
         return view('pages.country', ['filterOptions' => $this->getSearchFilterOptionsForView()]);
     }  
@@ -107,4 +197,5 @@ class Home extends Controller
     public function london() {       
         return view('pages.london', ['filterOptions' => $this->getSearchFilterOptionsForView()]);
     }  
+    
 }

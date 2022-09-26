@@ -37,93 +37,93 @@
       <p>Please advise what is required, giving as much detail as possible.</p>
    </div>
    <div class="form-group fault-notes-class-appliance" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultApplianceType">Appliance type *</label>
+      <label class="col-md-2 control-label" for="FaultApplianceType">Appliance type *</label>
       <div class="col-md-8">
-         <input type="text" id="InputFaultApplianceType" class="form-control validate-ignore validate" name="InputFaultApplianceType" maxlength="30">
+         <input type="text" id="FaultApplianceType" class="form-control validate-ignore validate" name="FaultApplianceType" maxlength="30">
       </div>
    </div>
    <div class="form-group fault-notes-class-appliance" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultApplianceMake">Make *</label>
+      <label class="col-md-2 control-label" for="FaultApplianceMake">Make *</label>
       <div class="col-md-8">
-         <input type="text" class="typeahead-appliance-make form-control validate-ignore validate" id="InputFaultApplianceMake" name="InputFaultApplianceMake" maxlength="30">
+         <input type="text" class="typeahead-appliance-make form-control validate-ignore validate" id="FaultApplianceMake" name="FaultApplianceMake" maxlength="30">
       </div>
    </div>
    <div class="form-group fault-notes-class-appliance" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultApplianceModel">Model *</label>
+      <label class="col-md-2 control-label" for="FaultApplianceModel">Model *</label>
       <div class="col-md-8">
-         <input type="text" id="InputFaultApplianceModel" class="form-control validate-ignore validate" name="InputFaultApplianceModel" maxlength="30">
+         <input type="text" id="FaultApplianceModel" class="form-control validate-ignore validate" name="FaultApplianceModel" maxlength="30">
       </div>
    </div>
    <div class="form-group fault-notes-class-appliance" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultApplianceSerialNumber">Serial number</label>
+      <label class="col-md-2 control-label" for="FaultApplianceSerialNumber">Serial number</label>
       <div class="col-md-8">
-         <input type="text" id="InputFaultApplianceSerialNumber" class="form-control validate-ignore" name="InputFaultApplianceSerialNumber" maxlength="30">
+         <input type="text" id="FaultApplianceSerialNumber" class="form-control validate-ignore" name="FaultApplianceSerialNumber" maxlength="30">
       </div>
    </div>
    <div class="form-group fault-notes-class-appliance" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultNumberOfFloors">Number of flights of stairs to the appliance</label>
+      <label class="col-md-2 control-label" for="FaultNumberOfFloors">Number of flights of stairs to the appliance</label>
       <div class="col-md-8">
-         <input type="text" id="InputFaultNumberOfFloors" class="form-control validate-ignore" name="InputFaultNumberOfFloors" maxlength="30">
+         <input type="text" id="FaultNumberOfFloors" class="form-control validate-ignore" name="FaultNumberOfFloors" maxlength="30">
       </div>
    </div>
    <div class="form-group fault-notes-class-bulbs" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultBulbsType">Type of bulb (e.g. standard or LED)</label>
+      <label class="col-md-2 control-label" for="FaultBulbsType">Type of bulb (e.g. standard or LED)</label>
       <div class="col-md-8">
-         <input type="text" class="form-control validate-ignore" id="InputFaultBulbsType" name="InputFaultBulbsType" maxlength="50" placeholder="For example, Standard, LED, Fluorescent tube">
+         <input type="text" class="form-control validate-ignore" id="FaultBulbsType" name="FaultBulbsType" maxlength="50" placeholder="For example, Standard, LED, Fluorescent tube">
       </div>
    </div>
    <div class="form-group fault-notes-class-bulbs" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultBulbsSize">Size of bulb (e.g. standard or compact)</label>
+      <label class="col-md-2 control-label" for="FaultBulbsSize">Size of bulb (e.g. standard or compact)</label>
       <div class="col-md-8">
-         <input type="text" class="form-control validate-ignore" id="InputFaultBulbsSize" name="InputFaultBulbsSize" maxlength="50" placeholder="For example,  standard or compact">
+         <input type="text" class="form-control validate-ignore" id="FaultBulbsSize" name="FaultBulbsSize" maxlength="50" placeholder="For example,  standard or compact">
       </div>
    </div>
    <div class="form-group fault-notes-class-bulbs" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultBulbsFittings">Bulb fittings (e.g. screwcap or bayonette)</label>
+      <label class="col-md-2 control-label" for="FaultBulbsFittings">Bulb fittings (e.g. screwcap or bayonette)</label>
       <div class="col-md-8">
-         <input type="text" class="form-control validate-ignore" id="InputFaultBulbsFittings" name="InputFaultBulbsFittings" maxlength="50" placeholder="For example, screwcap or bayonette">
+         <input type="text" class="form-control validate-ignore" id="FaultBulbsFittings" name="FaultBulbsFittings" maxlength="50" placeholder="For example, screwcap or bayonette">
       </div>
    </div>
    <div class="form-group fault-notes-class-bulbs" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultBulbsNumber">Number of bulbs affected</label>
+      <label class="col-md-2 control-label" for="FaultBulbsNumber">Number of bulbs affected</label>
       <div class="col-md-8">
-         <input type="text" class="form-control validate-ignore" id="InputFaultBulbsNumber" name="InputFaultBulbsNumber" maxlength="50" placeholder="For example, 1 or two">
+         <input type="text" class="form-control validate-ignore" id="FaultBulbsNumber" name="FaultBulbsNumber" maxlength="50" placeholder="For example, 1 or two">
       </div>
    </div>
    <div class="form-group fault-notes-class-fence" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultFenceDescription">Fence description (eg wood or wire)</label>
+      <label class="col-md-2 control-label" for="FaultFenceDescription">Fence description (eg wood or wire)</label>
       <div class="col-md-8">
-         <input type="text" class="form-control validate-ignore" id="InputFaultFenceDescription" name="InputFaultFenceDescription" maxlength="50" placeholder="For example, wood or wire or brick">
+         <input type="text" class="form-control validate-ignore" id="FaultFenceDescription" name="FaultFenceDescription" maxlength="50" placeholder="For example, wood or wire or brick">
       </div>
    </div>
    <div class="form-group fault-notes-class-item" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultItemNumber">Number affected</label>
+      <label class="col-md-2 control-label" for="FaultItemNumber">Number affected</label>
       <div class="col-md-8">
-         <input type="text" class="form-control validate-ignore" id="InputFaultItemNumber" name="InputFaultItemNumber" maxlength="50" placeholder="For example, 1 or two">
+         <input type="text" class="form-control validate-ignore" id="FaultItemNumber" name="FaultItemNumber" maxlength="50" placeholder="For example, 1 or two">
       </div>
    </div>
    <div class="form-group fault-notes-class-item" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultItemSize">Size of item</label>
+      <label class="col-md-2 control-label" for="FaultItemSize">Size of item</label>
       <div class="col-md-8">
-         <input type="text" class="form-control validate-ignore" id="InputFaultItemSize" name="InputFaultItemSize" maxlength="50" placeholder="For example, 50cm x 15cm">
+         <input type="text" class="form-control validate-ignore" id="FaultItemSize" name="FaultItemSize" maxlength="50" placeholder="For example, 50cm x 15cm">
       </div>
    </div>
    <div class="form-group fault-notes-class-toilet" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultSoleToilet">Only toilet in property</label>
+      <label class="col-md-2 control-label" for="FaultSoleToilet">Only toilet in property</label>
       <div class="col-md-8">
          <label class="radio-inline">
-         <input type="radio" name="InputFaultSoleToilet" id="InputFaultSoleToiletNo" value="No" class="validate-ignore"> No
+         <input type="radio" name="FaultSoleToilet" id="FaultSoleToiletNo" value="No" class="validate-ignore"> No
          </label>
          <label class="radio-inline">
-         <input type="radio" name="InputFaultSoleToilet" id="InputFaultSoleToiletYes" value="Yes" class="validate-ignore"> Yes
+         <input type="radio" name="FaultSoleToilet" id="FaultSoleToiletYes" value="Yes" class="validate-ignore"> Yes
          </label>
-         <label for="InputFaultSoleToilet" class="error" style="display:none;"></label>
+         <label for="FaultSoleToilet" class="error" style="display:none;"></label>
       </div>
    </div>
    <div class="form-group fault-notes-class-leak" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultLeakContainer">How big a container is needed for the leak?</label>
+      <label class="col-md-2 control-label" for="FaultLeakContainer">How big a container is needed for the leak?</label>
       <div class="col-md-8">
-         <select class="form-control validate-ignore" id="InputFaultLeakContainer" name="InputFaultLeakContainer">
+         <select class="form-control validate-ignore" id="FaultLeakContainer" name="FaultLeakContainer">
             <option value="">(please select)</option>
             <option>Cup</option>
             <option>Bowl</option>
@@ -134,9 +134,9 @@
       </div>
    </div>
    <div class="form-group fault-notes-class-leak" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultLeakEmptyRate">How often do you have to empty it?</label>
+      <label class="col-md-2 control-label" for="FaultLeakEmptyRate">How often do you have to empty it?</label>
       <div class="col-md-8">
-         <select class="form-control validate-ignore" id="InputFaultLeakEmptyRate" name="InputFaultLeakEmptyRate">
+         <select class="form-control validate-ignore" id="FaultLeakEmptyRate" name="FaultLeakEmptyRate">
             <option value="">(please select)</option>
             <option>Every few minutes</option>
             <option>15 minutes</option>
@@ -149,9 +149,9 @@
       </div>
    </div>
    <div class="form-group fault-notes-class-leak" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultLeakIntermittency">Is the leak constant or intermittent?</label>
+      <label class="col-md-2 control-label" for="FaultLeakIntermittency">Is the leak constant or intermittent?</label>
       <div class="col-md-8">
-         <select class="form-control validate-ignore" id="InputFaultLeakIntermittency" name="InputFaultLeakIntermittency">
+         <select class="form-control validate-ignore" id="FaultLeakIntermittency" name="FaultLeakIntermittency">
             <option value="">(please select)</option>
             <option>Constant</option>
             <option>Intermittent </option>
@@ -160,27 +160,27 @@
       </div>
    </div>
    <div class="form-group fault-notes-class-rooms" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultRoomsName">Which room(s) affected?</label>
+      <label class="col-md-2 control-label" for="FaultRoomsName">Which room(s) affected?</label>
       <div class="col-md-8">
-         <input type="text" class="form-control validate-ignore" id="InputFaultRoomsName" name="InputFaultRoomsName" maxlength="50" placeholder="For example, kitchen, hallway">
+         <input type="text" class="form-control validate-ignore" id="FaultRoomsName" name="FaultRoomsName" maxlength="50" placeholder="For example, kitchen, hallway">
       </div>
    </div>
    <div class="form-group fault-notes-class-rooms" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultRoomsStarted">When was the problem first noticed?</label>
+      <label class="col-md-2 control-label" for="FaultRoomsStarted">When was the problem first noticed?</label>
       <div class="col-md-8">
-         <input type="text" class="form-control validate-ignore" id="InputFaultRoomsStarted" name="InputFaultRoomsStarted" maxlength="50" placeholder="For example, 1st Aug, last week">
+         <input type="text" class="form-control validate-ignore" id="FaultRoomsStarted" name="FaultRoomsStarted" maxlength="50" placeholder="For example, 1st Aug, last week">
       </div>
    </div>
    <div class="form-group fault-notes-class-rooms" style="display: none;">
-      <label class="col-md-2 control-label" for="InputFaultRoomsFrequency">How frequent is the problem?</label>
+      <label class="col-md-2 control-label" for="FaultRoomsFrequency">How frequent is the problem?</label>
       <div class="col-md-8">
-         <input type="text" class="form-control validate-ignore" id="InputFaultRoomsFrequency" name="InputFaultRoomsFrequency" maxlength="50" placeholder="For example, daily, sometimes, often">
+         <input type="text" class="form-control validate-ignore" id="FaultRoomsFrequency" name="FaultRoomsFrequency" maxlength="50" placeholder="For example, daily, sometimes, often">
       </div>
    </div>
    <div class="form-group">
-      <label class="col-md-2 control-label" for="InputFaultNotes">Fault detail *</label>
+      <label class="col-md-2 control-label" for="FaultNotes">Fault detail *</label>
       <div class="col-md-8">
-         <textarea id="InputFaultNotes" name="InputFaultNotes" rows="5" class="validate form-control resizing" maxlength="4000" aria-describedby="InputFaultNotesFieldNode" style="height: auto;" aria-invalid="true"></textarea>
+         <textarea id="FaultNotes" name="FaultNotes" rows="5" class="validate form-control resizing" maxlength="4000" aria-describedby="FaultNotesFieldNode" style="height: auto;" aria-invalid="true"></textarea>
          <div class="chars-remaining">4000 characters remaining</div>
          <em id="additional-notes-default" class="field-note">Please include as much useful information as possible about the issue</em>
          <em id="additional-notes-property-services" class="field-note" style="display: none;">Please advise when you would like the service to take place, (if applicable) how frequently you would like it to happen, and any other information about the service required</em>

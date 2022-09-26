@@ -32,7 +32,7 @@
 @section('page-body')
     <main >
         <div class="hero ">           
-            <video autoplay loop muted playsinline poster="{{asset('images/hero1.jpg')}}"  class="home-video">
+            <video id="home_video" poster="{{asset('images/hero1.jpg')}}"  class="home-video">
                 <source src="{{asset('home.mp4')}}" type="video/mp4">
             </video>
             <!-- <div ><a class="btn-guards white-text modal-trigger" href="#modal1" >Find your home</a></div> -->
@@ -244,10 +244,17 @@
             //     instance.open();         
                 setTimeout(() => {
                     $('#modal1').modal('open'); 
-                }, 3000);
+                }, 3000);                
             });
         <?php endif; ?>        
-
+        // setTimeout(function(){ 
+        //     document.body.addEventListener("mousemove", function () {
+        //         // audio.play()
+        //         console.log('check this')
+        //         // $('video').trigger('play'); 
+        //         document.getElementById('home_video').play()
+        //     })
+        // }, 1000);
         let reviews=null,currentReview=0;
         function initMap() {
         const map = new google.maps.Map(document.getElementById("map"), {

@@ -282,7 +282,28 @@
         valuation_method: "online",
         valuation_type: "both"
     };
-
+    let form_data2 = {
+        address1: "2 Kenilworth Road",
+        address2: "",
+        bedrooms: "",
+        contact_situation: "planning_to_sell",
+        email: "tester@gmail.com",
+        first_name: "",
+        full: "2 Kenilworth Road, Scunthorpe, DN16 1EX",
+        is_covered_by_foxtons: "0",
+        is_covered_by_office: "0",
+        last_name: "",
+        legal_owner: "no",
+        optout_to_marketing: false,
+        phone: "",
+        postcode: "DN16 1EX",
+        property_sub_type: "mid_terrace",
+        property_type: "house",
+        title: "Mr",
+        town: "Scunthorpe",
+        valuation_method: "online",
+        valuation_type: "both"
+    };
     //  const api_url = "{{ url('/') }}/calculateValuation";
     async function getaddr(url, addr) {
         // document.getElementById("address").innerHTML = `<div class="loader"></div> `;
@@ -350,7 +371,8 @@
         // console.log(data);
     }
 
-    async function getvaluation(form_data) {
+    async function getvaluation(form_data, form_data2) {
+        // console.log(form_data2)
         // document.getElementById("address").innerHTML = `<div class="loader"></div> `;
         const api_url = "{{ url('/') }}/calculateValuation";
 
@@ -373,7 +395,7 @@
         // Storing data in form of JSON
         var data = await response.json();
         // console.log("data: "+JSON.stringify(data));
-        console.log(data.hasOwnProperty('average_price_estimates'))
+        // console.log(data.hasOwnProperty('average_price_estimates'))
         if(data.hasOwnProperty('average_price_estimates')) {
             $('.result-loader').addClass('hidden');
             $('.address').html(form_data.full);
@@ -384,6 +406,17 @@
             $('.suggested_result').removeClass('hidden')
         }
         modal.classList.toggle("show-modal");
+        $.ajax({
+        type:'POST',
+        url:'/bookvaluation',
+        data:{form_data2},
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        success:function(data){
+            console.log(data);
+        }
+        });
         $('#tab1').html(` <object data="{{ url('/images/valuation_graph.svg?min_range=${numberWithCommas(data.average_price_estimates.estimate_value_lower)}&max_range=${numberWithCommas(data.average_price_estimates.estimate_value_upper)}') }}" type="image/svg+xml"> <img src="defualt.jpg" /></object>`)
         $('#tab2').html(` <object data="{{ url('/images/valuation_graph.svg?min_range=${numberWithCommas(data.average_price_estimates.rental_estimate_value_lower)}&max_range=${numberWithCommas(data.average_price_estimates.rental_estimate_value_upper)}') }}" type="image/svg+xml"> <img src="defualt.jpg" /></object>`)
     }
