@@ -24,7 +24,7 @@ class Contact extends Controller
             'phone'  => 'required',
                            ]);
     
-        Mail::to(env('ADMIN_MAIL'))->send(new ContactUs($request->only(['name','email','phone','subject','message'])));
+        Mail::to("info@guardsrealestate.com")->send(new ContactUs($request->only(['name','email','phone','subject','message'])));
         return back()->with("status", "Your message has been received, We'll get back to you shortly.");
     }
     
