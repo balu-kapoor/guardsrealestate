@@ -24,7 +24,7 @@ class Contact extends Controller
             'phone'  => 'required',
                            ]);
     
-        Mail::to("info@guardsrealestate.com")->send(new ContactUs($request->only(['name','email','phone','subject','message'])));
+        Mail::to('info@guardsrealestate.com')->send(new ContactUs($request->only(['name','email','phone','subject','message'])));
         return back()->with("status", "Your message has been received, We'll get back to you shortly.");
     }
     
@@ -38,7 +38,7 @@ class Contact extends Controller
             'property'  => 'required',
                            ]);
     
-        Mail::to(env('ADMIN_MAIL'))->send(new BookViewing($request->only(
+        Mail::to('info@guardsrealestate.com')->send(new BookViewing($request->only(
             ['name','email','phone','bookingdate','property','message']
         )));
         return response()->json("Your message has been received, We'll get back to you shortly.");
@@ -53,7 +53,7 @@ class Contact extends Controller
             'bedrooms'  => 'required'
                            ]);
     
-        Mail::to(env('ADMIN_MAIL'))->send(new BookValuation($request->only(
+        Mail::to('info@guardsrealestate.com')->send(new BookValuation($request->only(
             ['name','email','phone','bookingdate','property','message']
         )));
         return response()->json("Your message has been received, We'll get back to you shortly.");
