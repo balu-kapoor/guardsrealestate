@@ -38,7 +38,7 @@ class About extends Controller
             'phone'  => 'required',
         ]);
 
-        Mail::to('brkapoor11@gmail.com')->send(new FeeEnquiry($request->only(['name','email','phone','message'])));
+        Mail::to('info@guardsrealestate.com')->send(new FeeEnquiry($request->only(['name','email','phone','message'])));
         Cookie::queue('asked-for-fees', 'asked', 60 * 60 * 24);
         return back()->with("status", "Your message has been received, We'll get back to you shortly.");
     }
