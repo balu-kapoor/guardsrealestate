@@ -94,7 +94,7 @@
 						<p style="color: #fff !important">Central London, City of London, and anywhere within a one hour driving radius from Central London</p>
 					</div>
 					<div style="margin-top: 1.5rem;">
-						<h5>Contact</h5>
+					<h5>Contact</h5>
 						43 BERKELEY SQUARE<br> LONDON <br> W1J 5AP
 					</div>
 					<div class="life">Protecting your life investments</div>
@@ -156,7 +156,7 @@ header.site-header.header-fixed.d-flex.justify-content-center {
 	grid-template-columns: auto auto auto;
 }
 footer {
-    padding: 1rem 1rem !important;
+    /* padding: 1rem 1rem !important; */
 }
 .preloader .circle-side {
   border-color: #d9a852;

@@ -154,7 +154,7 @@ header.site-header.header-fixed.d-flex.justify-content-center {
 	grid-template-columns: auto auto auto;
 }
 footer {
-    padding: 1rem 1rem !important;
+    /* padding: 1rem 1rem !important; */
 }
 .preloader .circle-side {
   border-color: #d9a852;
