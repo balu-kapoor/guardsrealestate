@@ -68,7 +68,7 @@
 				<div class="container align-self-center text-white">
 					<!-- <h1 class="text-center mb-3">We are launching soon</h1> -->
 					<!-- <p class="lead text-center mb-5">5 Yarm Rd, Stockton-on-Tees TS18 3SF</p> -->
-					<div class="text-center"><a href="https://guardscountry.com/" class="btn-guards">Find Your Home</a></div>
+					<div class="text-center"><a href="{{ url('/') }}?location=true" class="btn-guards">Find Your Home</a></div>
 					<!-- <div class="text-center"><a href="https://guardsrealestate.com/" class="btn-lg btn-link">Visit Guards Real Estate</a></div> -->
 					<div class="row">
 						<div class="col-12 col-md-8 col-lg-7 mx-lg-auto">
