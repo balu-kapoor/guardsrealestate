@@ -34,12 +34,12 @@
                     </div>
                         <p><strong>LONG OPENING HOURS</strong></p>
                         <p>Flexible Consultants who will work around your time schedule.</p>
-                        <p class="p-s-text"><strong>Monday – Thursday</strong><br>
-                            9:00am – 8:00pm</p>
-                        <p class="p-s-text"><strong>Friday</strong><br>
+                        <p class="p-s-text"><strong>Monday – Friday</strong><br>
+                            9:00am – 17:00pm</p>
+                        <!-- <p class="p-s-text"><strong>Friday</strong><br>
                             9:00am – 5:30pm</p>
                         <p class="p-s-text"><strong>Saturday<br>
-                        </strong>10:00am – 3:30pm</p>
+                        </strong>10:00am – 3:30pm</p> -->
                         <p>&nbsp;</p>
                         <p><strong>EMERGENCY CALL SERVICE</strong></p>
                         <p>24hrs</p>

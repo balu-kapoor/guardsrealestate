@@ -89,8 +89,11 @@
 			<footer class="site-footer footer-fixed footer-mobile-dark footer-light">
 				<div class="container-fluid align-items-md-center justify-content-md-between btm_footer">
 					<div><img class="footer_logo" src="https://fabrum.nz/guards/public/images/london.png" alt=""></div>
-					<div>© 2022 Guards London - All Rights Reserved</div>
-					<div>
+					<div style="padding: 0 10rem;text-align: center;">
+						<h5>Areas we cover</h5>
+						<p style="color: #fff !important">Central London, City of London, and anywhere within a one hour driving radius from Central London</p>
+					</div>
+					<div style="margin-top: 1.5rem;">
 						<h5>Contact</h5>
 						43 BERKELEY SQUARE<br> LONDON <br> W1J 5AP
 					</div>
@@ -232,6 +235,11 @@ footer {
   left: 50%;
   transform: translate(-50%,-50%);
   object-fit: cover;
+}
+h5 {
+    color: #d9a852 !important;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 </style>
 	</body>

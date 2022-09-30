@@ -85,10 +85,15 @@
 			<footer class="site-footer footer-fixed footer-mobile-dark footer-light">
 				<div class="container-fluid align-items-md-center justify-content-md-between btm_footer">
 					<div><img class="footer_logo" src="https://fabrum.nz/guards/public/images/country.png" alt=""></div>
-					<div>© 2022 Guards Country - All Rights Reserved</div>
-					<div>
+					<div style="padding: 0 10rem;text-align: center;">
+						<h5>Areas we cover</h5>
+						<p style="color: #fff !important">Yarm, Eaglescliffe, Ingleby Barwick, Wynyard, Hartburn, Norton, Great Ayton, Stokesley, Marton, Nunthorpe, Saltburn, Darlington and surrounding areas</p>
+					</div>
+					<div style="margin-top: 3rem;">
 						<h5>Contact</h5>
 						5 Yarm Rd<br> Stockton-on-Tees <br> TS18 3SF
+						<br>
+						Phone: 01642687188
 					</div>
 					<div class="life">Protecting your life investments</div>
 					
@@ -204,6 +209,11 @@ footer {
 }
 .btn-guards:hover:before, .btn-guards:focus:before, .btn-guards:active:before, .btn-guards:hover:after, .btn-guards:focus:after, .btn-guards:active:after {
     right: -160%;
+}
+h5 {
+    color: #d9a852 !important;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 </style>
 	</body>

@@ -25,12 +25,13 @@
         <div class="container">
             <div class="row first-row-block">
                 <div class="col s12">
-                    <p class="p-l-text">The London lettings market is unique in its competitiveness and demands. As rents rise so do tenants’ expectations and it is therefore vital to be prepared in order to realise the full benefit of your investment.</p>
-                    <p class="p-l-text" >A well managed tenancy keeps tenants happy and increases the chances of a renewal.</p>
+                    <p class="p-l-text">The United Kingdoms lettings market is unique in its competitiveness and demands. As rents rise so do tenants’ expectations and it is therefore vital to be prepared in order to realise the full benefit of your investment.</p>
+                    <p class="p-l-text" >A well managed tenancy keeps tenants happy and increases the chances of a renewal.
+</p>
                     <p class="p-l-text">Tenants will often ask if we ‘the agents’ are managing the property that they are interested in. Guards Protection research has shown that tenants are more likely to offer on a property managed by us than one that isn’t. In fact, most corporate tenants insist on fully managed properties through fear of encountering an unsafe tenancy.</p>
-                    <p class="p-l-text" >By choosing Guards Real Estate to manage your property you will free yourself from the stress and responsibility of maintaining a property, this will leave you with more time to yourself. Experienced home owners in managing a property can result in been a full time job of hassle &amp; repairs.</p>
-                    <p class="p-l-text" >Guards Real Estate will Protect your life investments : by providing you with a designated property manager that will be well aquatinted to your property &amp; typically ARLA (Association of Residential Lettings Agents) qualified, but perhaps more importantly have the experience to know what to do, what to say, how to say it and how to provide you the best possible outcome for you and your property.</p>
-                    <p class="p-l-text">High Quality tenants looking for property to rent in London expect the best &amp; we are proud to be able to deliver a regal service. Guards Protection membership package will leave you comfortable in the knowledge that your property is in safe hands.</p>
+                    <p class="p-l-text" >By choosing Guards Real Estate to manage your property you will free yourself from the stress and responsibility of maintaining a property, this will leave you with more time to yourself. Experienced home owners in managing a property can result in been a full time job of hassle & repairs.</p>
+                    <p class="p-l-text" >Guards Real Estate will Protect your life investments : by providing you with a designated property manager that will be well aquatinted to your property & typically ARLA (Association of Residential Lettings Agents) qualified, but perhaps more importantly have the experience to know what to do, what to say, how to say it and how to provide you the best possible outcome for you and your property.</p>
+                    <p class="p-l-text">High Quality tenants looking for property to rent in London,North Yorkshire, County Durham and Surrounding areas expect the best & we are proud to be able to deliver a regal service. Guards Protection membership package will leave you comfortable in the knowledge that your property is in safe hands.</p>
                        </div>
             </div>
             <div class="privacy-text-block">

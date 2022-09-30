@@ -30,12 +30,13 @@
                 <p style="text-transform: uppercase;">Head Office</p>
                 <p>43 BERKELEY SQUARE<br>
                     LONDON<br>
-                    W1J 5AP<br>
-                    <br>
+                    W1J 5AP<br>        
+                    <strong>T</strong>
+                    <a href="tel:+442036331271">+44 (0) 20 3633 1271</a>
                     <p style="text-transform: uppercase;">north yorkshire</p>
                     <p style="text-transform: uppercase;">5 Yarm Rd<br>
                         Stockton-on-Tees<br>
-                        TS18 3SF
+                        TS18 3SF                    
                     </p>
                     <strong>T</strong>
                     <a href="tel:+442036331271">+44 (0) 20 3633 1271</a>
