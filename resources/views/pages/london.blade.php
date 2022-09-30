@@ -97,7 +97,7 @@
 					<h5>Contact</h5>
 						43 BERKELEY SQUARE<br> LONDON <br> W1J 5AP
 						<br>
-						T +44 020 3633 1271
+						<p style="color: #fff !important">T +44 020 3633 1271</p>
 					</div>
 					<div class="life">Protecting your life investments</div>
 					

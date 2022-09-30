@@ -93,7 +93,7 @@
 						<h5>Contact</h5>
 						5 Yarm Rd<br> Stockton-on-Tees <br> TS18 3SF
 						<br>
-						T +44 01642 687 188
+						<p style="color: #fff !important">T +44 01642 687 188</p>
 					</div>
 					<div class="life">Protecting your life investments</div>
 					
