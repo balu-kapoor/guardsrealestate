@@ -61,7 +61,7 @@
        
         <ul class="cards container">
             <li>
-                <a href="{{ url('guards-country') }}" class="card card1">
+                <a href="http://guardscountry.com/" class="card card1">
                 <img src="{{ asset('country.png') }}" class="card__image" alt="" />
                 
                 <div class="card__overlay">
