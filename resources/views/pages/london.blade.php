@@ -89,13 +89,15 @@
 			<footer class="site-footer footer-fixed footer-mobile-dark footer-light">
 				<div class="container-fluid align-items-md-center justify-content-md-between btm_footer">
 					<div><img class="footer_logo" src="https://fabrum.nz/guards/public/images/london.png" alt=""></div>
-					<div style="padding: 0 10rem;text-align: center;">
+					<div class="areas" style="padding: 0 10rem;text-align: center;">
 						<h5>Areas we cover</h5>
 						<p style="color: #fff !important">Central London, City of London, and anywhere within a one hour driving radius from Central London</p>
 					</div>
 					<div style="margin-top: 1.5rem;">
 					<h5>Contact</h5>
 						43 BERKELEY SQUARE<br> LONDON <br> W1J 5AP
+						<br>
+						Phone: 020 3633 1271
 					</div>
 					<div class="life">Protecting your life investments</div>
 					
@@ -169,6 +171,12 @@ footer {
 	.life {
 		display: none;
 	}
+	.areas {
+		padding : 0 !important;
+	}
+}
+.life {
+	margin-bottom: 1rem;
 }
 .btn-guards {
     text-transform: capitalize;

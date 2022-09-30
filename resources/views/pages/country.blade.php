@@ -68,7 +68,7 @@
 				<div class="container align-self-center text-white">
 					<!-- <h1 class="text-center mb-3">We are launching soon</h1> -->
 					<!-- <p class="lead text-center mb-5">5 Yarm Rd, Stockton-on-Tees TS18 3SF</p> -->
-					<div class="text-center"><a href="{{ url('/') }}?location=true" class="btn-guards">Find Your Home</a></div>
+					<div class="text-center"><a href="https://guardscountry.com/" class="btn-guards">Find Your Home</a></div>
 					<!-- <div class="text-center"><a href="https://guardsrealestate.com/" class="btn-lg btn-link">Visit Guards Real Estate</a></div> -->
 					<div class="row">
 						<div class="col-12 col-md-8 col-lg-7 mx-lg-auto">
@@ -85,7 +85,7 @@
 			<footer class="site-footer footer-fixed footer-mobile-dark footer-light">
 				<div class="container-fluid align-items-md-center justify-content-md-between btm_footer">
 					<div><img class="footer_logo" src="https://fabrum.nz/guards/public/images/country.png" alt=""></div>
-					<div style="padding: 0 10rem;text-align: center;">
+					<div class="areas" style="padding: 0 10rem;text-align: center;">
 						<h5>Areas we cover</h5>
 						<p style="color: #fff !important">Yarm, Eaglescliffe, Ingleby Barwick, Wynyard, Hartburn, Norton, Great Ayton, Stokesley, Marton, Nunthorpe, Saltburn, Darlington and surrounding areas</p>
 					</div>
@@ -93,7 +93,7 @@
 						<h5>Contact</h5>
 						5 Yarm Rd<br> Stockton-on-Tees <br> TS18 3SF
 						<br>
-						Phone: 01642687188
+						Phone: 01642 687 188
 					</div>
 					<div class="life">Protecting your life investments</div>
 					
@@ -167,6 +167,12 @@ footer {
     .life {
         display: none;
     }
+	.areas {
+		padding : 0 !important;
+	}
+}
+.life {
+	margin-bottom: 1rem;
 }
 .btn-guards {
     text-transform: capitalize;
@@ -214,6 +220,9 @@ h5 {
     color: #d9a852 !important;
     font-weight: 600;
     margin-bottom: 1rem;
+}
+.site-container {
+    overflow: hidden !important;
 }
 </style>
 	</body>
