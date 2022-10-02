@@ -290,7 +290,7 @@
         email: "tester@gmail.com",
         first_name: "",
         full: "2 Kenilworth Road, Scunthorpe, DN16 1EX",
-        is_covered_by_foxtons: "0",
+        // is_covered_by_foxtons: "0",
         is_covered_by_office: "0",
         last_name: "",
         legal_owner: "no",
