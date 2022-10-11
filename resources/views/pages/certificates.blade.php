@@ -34,7 +34,7 @@
 
                     <a class="btn-guards full-width"  href="{{asset('files/PRS+Certificate.pdf')}}" title="Guards - Property Redress Scheme" target="_blank">PROPERTY REDRESS SCHEME MEMBERSHIP 22/23</a>
 
-                    <a class="btn-guards full-width"   href="{{asset('files/PRS+MemberShip+Certificate.pdf')}}" title="Guards - My Deposits Protection" target="_blank">MY DEPOSITS PROTECTION CERTIFICATE</a>
+                    <a class="btn-guards full-width"   href="{{asset('files/50965129.pdf')}}" title="Guards - My Deposits Protection" target="_blank">MY DEPOSITS PROTECTION CERTIFICATE</a>
 
                 </div>
             </div>

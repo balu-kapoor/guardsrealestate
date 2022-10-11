@@ -170,6 +170,7 @@ class Home extends Controller
         //     'email'  => 'required|email',
         //     'phone'  => 'required',
         // ]);
+        $data = $request->all();
         if(is_array($request->all())) {
             Mail::to('info@guardsrealestate.com')->send(new BookValuation($request->all()));
         }
