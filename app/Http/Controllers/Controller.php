@@ -304,7 +304,6 @@ class Controller extends BaseController
                         case 25: // images
                             if(!empty($attributeData))
                             {
-                                dd($attributeData);
                                 $dom = new \DOMDocument();
                                 $dom->loadHTML(str_ireplace('&', '&amp;', $attributeData));
                                 $dom->preserveWhiteSpace = false;
@@ -409,7 +408,7 @@ class Controller extends BaseController
         // close connection
 
         curl_close($ch);
-
+        dd($postResult);
         return $postResult;
 
     }
