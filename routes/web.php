@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/crm', 'Controller@cms_sale');
 Route::get('/',  'Home@index')->name('website-home');
 Route::get('/repair-maintenance',  'Home@repairMaintenance')->name('repair-maintenance');
 Route::get('/CreateIssueSuccess',  'Home@CreateIssueSuccess');//->name('repair-maintenance');

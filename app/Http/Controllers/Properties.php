@@ -82,8 +82,11 @@ class Properties extends Controller
         return view('pages.listing',['filterOptions' => $this->getSearchFilterOptionsForView(),'properties' => $results,'allproperties' => $allProperties]);
     }
 
-    public function detailPage(GB_PropertySync $property, $slug, Request $request)
+    public function detailPage($slug, Request $request)
     {
+        // dd($slug);
+        $property = GB_PropertySync::findOrFail($slug);
+        // dd($property);
         return view('pages.property',['filterOptions' => $this->getSearchFilterOptionsForView(), 'property'=>$property]);
     }
 

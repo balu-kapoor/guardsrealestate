@@ -63,6 +63,10 @@ class Controller extends BaseController
         }
         return $filterOptions;
     }
+    public function cms_sale() {
+        $this->search1090("S",999);
+
+    }
     public function search1090($propind,$totalnumber, $pagesize =null, $pagenumber = null, $property_id = null)
     {
         $v2WebsiteBusinessKey = "guardsrealestate";
@@ -124,7 +128,6 @@ class Controller extends BaseController
 //            'PropContainerHtml'=> $propContainerHtml,
             'OverallHtml'=>$overallHtml
         );
-//        dd($fields);
         if(empty($property_id))
             $resp = $this->send1090Post($fields,'WebsitePropertySearch/Search');
         else
@@ -274,30 +277,32 @@ class Controller extends BaseController
                                 $property['propind'] = array_values($tmp_qstring)[1];
                                 //extract image src from image tag
 
-                                // $property['img_listingIcon'] = $this->getPropertyImage(
-                                //     $property['id'],
-                                //     strtok($dom->getElementsByTagName('img')->item(0)->getAttribute('src'), '?'),
-                                //     1200,
-                                //     700
-                                // );
-                                // $property['img_1200x600'] = $this->getHomeImage(
-                                //     $property['id'],
-                                //     strtok($dom->getElementsByTagName('img')->item(0)->getAttribute('src'), '?'),
-                                //     1200,
-                                //     600
-                                // );
-                                // $property['img_600x600'] = $this->getHomeImage(
-                                //     $property['id'],
-                                //     strtok($dom->getElementsByTagName('img')->item(0)->getAttribute('src'), '?'),
-                                //     600,
-                                //     600
-                                // );
-                                // $property['img_600x1200'] = $this->getHomeImage(
-                                //     $property['id'],
-                                //     strtok($dom->getElementsByTagName('img')->item(0)->getAttribute('src'), '?'),
-                                //     600,
-                                //     1200
-                                // );
+                                $property['img_listingIcon'] = $this->getPropertyImage(
+                                    $property['id'],
+                                    strtok($dom->getElementsByTagName('img')->item(0)->getAttribute('src'), '?'),
+                                    1200,
+                                    700
+                                );
+                                $property['img_1200x600'] = $this->getHomeImage(
+                                    $property['id'],
+                                    strtok($dom->getElementsByTagName('img')->item(0)->getAttribute('src'), '?'),
+                                    1200,
+                                    600
+                                );
+                                $property['img_600x600'] = $this->getHomeImage(
+                                    $property['id'],
+                                    strtok($dom->getElementsByTagName('img')->item(0)->getAttribute('src'), '?'),
+                                    600,
+                                    600
+                                );
+                                $property['img_600x1200'] = $this->getHomeImage(
+                                    $property['id'],
+                                    strtok($dom->getElementsByTagName('img')->item(0)->getAttribute('src'), '?'),
+                                    600,
+                                    1200
+                                );
+                                // print $property['title'];
+                                // echo "\r\n";
                             }
                             break;
 
@@ -341,9 +346,11 @@ class Controller extends BaseController
                         dd($e,$property);
                     }
                 }
+                print count($properties);
                 $properties[] = $property;
             }
         }
+        // dd($properties);
         return $properties;
     }
     private function send1090Post($fields,$target) {
