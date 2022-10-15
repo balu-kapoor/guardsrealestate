@@ -474,6 +474,7 @@ class Controller extends BaseController
         $imagepathname = '/static/property/'.$property_id.'/cache/listingIcon_'.$width.'x'.$height.'jpg';
         //todo check if exists in cache
         //todo check if exists in storage
+        dd($imagepathname);
         if(!Storage::exists($imagepathname))
         {
             $url_param = '?width='.($width).'&height='.($height).'&cropToFill=true';
