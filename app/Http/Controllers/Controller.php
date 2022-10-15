@@ -65,9 +65,9 @@ class Controller extends BaseController
     }
     public function search1090($propind,$totalnumber, $pagesize =null, $pagenumber = null, $property_id = null)
     {
+        
         $v2WebsiteBusinessKey = "guardsrealestate";
         $v2WebsiteUrl = "http://www.guardsrealestate.com/";
-
         if(empty($pagesize))
             $pagesize=$totalnumber;
         if(empty($pagenumber))
@@ -124,17 +124,18 @@ class Controller extends BaseController
 //            'PropContainerHtml'=> $propContainerHtml,
             'OverallHtml'=>$overallHtml
         );
-//        dd($fields);
-        if(empty($property_id))
+        if(empty($property_id)) {
             $resp = $this->send1090Post($fields,'WebsitePropertySearch/Search');
+
+        }
         else
         {
-            $resp = $this->send1090Post($fields,'WebsitePropertySearch/Search');
+            $resp = $this->send1090Post($fields,'WebsitePropertySearch/Search');   
+
         }
-
         $propertiesRawData = (explode('<|PROPERTY_TAG|>',$resp));
-
         $properties = [];
+        $j = 1;
         foreach($propertiesRawData as $propdata)
         {
             $propertyIndData = explode('||||||',$propdata);
@@ -148,7 +149,8 @@ class Controller extends BaseController
                 'virtual_tour_link' => '',
                 'imagelist' => [],
                 'raw' => $propertyIndData,];
-            if(count($propertyIndData) > 3)
+            
+                if(count($propertyIndData) > 3)
             {
                 $i=0;
                 foreach ($propertyIndData as $attributeData)
@@ -313,12 +315,9 @@ class Controller extends BaseController
                             break;
 
                     }
-
                     unset($attributeData);
-
                     $i++;
                 }
-
                 if(!GB_PropertySync::where('id', $property['id'])->exists())
                 {
 
@@ -344,7 +343,6 @@ class Controller extends BaseController
                 $properties[] = $property;
             }
         }
-
         return $properties;
     }
     private function send1090Post($fields,$target) {
@@ -407,9 +405,7 @@ class Controller extends BaseController
         //$content_type = curl_getinfo($ch, CURLINFO_CONTENT_TYPE);
         //echo('<!-- ' . $content_type . ' -->' . "\n");
         // close connection
-
         curl_close($ch);
-
         return $postResult;
 
     }
@@ -447,9 +443,9 @@ class Controller extends BaseController
             $url_param = '?width='.($width-$whiteBorderPixels).'&height='.($height-$whiteBorderPixels).'&cropToFill=true';
             $img = Image::make($imgpath.$url_param);
             $img->resizeCanvas($width, $height, 'center', false, 'ffffff');
-            $img->save(public_path($imagepathname));
-            // $imgToSave = $img->stream()->detach();
-            // Storage::disk('s3')->put($imagepathname, $imgToSave);
+            // $img->save(public_path($imagepathname));
+            $imgToSave = $img->stream()->detach();
+            Storage::disk('local')->put($imagepathname, $imgToSave);
             
         }
 
@@ -458,6 +454,7 @@ class Controller extends BaseController
     }
     private function getPropertyImage($property_id, $imgpath, $width,$height)
     {
+        // dd(Storage::exists('static'));
         if(!Storage::exists('static'))
         {
             Storage::makeDirectory('static', $mode = 0777, true, true);
@@ -479,9 +476,9 @@ class Controller extends BaseController
             $url_param = '?width='.($width).'&height='.($height).'&cropToFill=true';
             $img = Image::make($imgpath.$url_param);
             $img->resizeCanvas($width, $height, 'center', false, 'ffffff');
-            // $imgToSave = $img->stream()->detach();
-            // Storage::disk('s3')->put($imagepathname, $imgToSave);
-            $img->save(public_path($imagepathname));
+            $imgToSave = $img->stream()->detach();
+            Storage::disk('local')->put($imagepathname, $imgToSave);
+            // $img->save(public_path($imagepathname));
         }
 
         return ($imagepathname);
