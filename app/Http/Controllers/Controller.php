@@ -253,6 +253,7 @@ class Controller extends BaseController
                                 $dom->loadHTML($attributeData);
                                 $dom->preserveWhiteSpace = false;
                                 //extract id from url
+                                dd('check here');
                                 $tmp_url = $dom->getElementsByTagName('a')->item(0)->getAttribute('href');
 
                                 $property['virtual_tour_link'] = $tmp_url;
@@ -408,7 +409,6 @@ class Controller extends BaseController
         // close connection
 
         curl_close($ch);
-        dd($postResult);
         return $postResult;
 
     }
