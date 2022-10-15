@@ -344,7 +344,7 @@ class Controller extends BaseController
                 $properties[] = $property;
             }
         }
-
+dd($properties);
         return $properties;
     }
     private function send1090Post($fields,$target) {
@@ -474,7 +474,6 @@ class Controller extends BaseController
         $imagepathname = '/static/property/'.$property_id.'/cache/listingIcon_'.$width.'x'.$height.'jpg';
         //todo check if exists in cache
         //todo check if exists in storage
-        dd($imagepathname);
         if(!Storage::exists($imagepathname))
         {
             $url_param = '?width='.($width).'&height='.($height).'&cropToFill=true';
@@ -484,7 +483,7 @@ class Controller extends BaseController
             Storage::disk('public')->put($imagepathname, $imgToSave);
             // $img->save(public_path($imagepathname));
         }
-
+        
         return ($imagepathname);
 
     }
