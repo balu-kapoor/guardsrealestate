@@ -274,30 +274,30 @@ class Controller extends BaseController
                                 $property['propind'] = array_values($tmp_qstring)[1];
                                 //extract image src from image tag
 
-                                // $property['img_listingIcon'] = $this->getPropertyImage(
-                                //     $property['id'],
-                                //     strtok($dom->getElementsByTagName('img')->item(0)->getAttribute('src'), '?'),
-                                //     1200,
-                                //     700
-                                // );
-                                // $property['img_1200x600'] = $this->getHomeImage(
-                                //     $property['id'],
-                                //     strtok($dom->getElementsByTagName('img')->item(0)->getAttribute('src'), '?'),
-                                //     1200,
-                                //     600
-                                // );
-                                // $property['img_600x600'] = $this->getHomeImage(
-                                //     $property['id'],
-                                //     strtok($dom->getElementsByTagName('img')->item(0)->getAttribute('src'), '?'),
-                                //     600,
-                                //     600
-                                // );
-                                // $property['img_600x1200'] = $this->getHomeImage(
-                                //     $property['id'],
-                                //     strtok($dom->getElementsByTagName('img')->item(0)->getAttribute('src'), '?'),
-                                //     600,
-                                //     1200
-                                // );
+                                $property['img_listingIcon'] = $this->getPropertyImage(
+                                    $property['id'],
+                                    strtok($dom->getElementsByTagName('img')->item(0)->getAttribute('src'), '?'),
+                                    1200,
+                                    700
+                                );
+                                $property['img_1200x600'] = $this->getHomeImage(
+                                    $property['id'],
+                                    strtok($dom->getElementsByTagName('img')->item(0)->getAttribute('src'), '?'),
+                                    1200,
+                                    600
+                                );
+                                $property['img_600x600'] = $this->getHomeImage(
+                                    $property['id'],
+                                    strtok($dom->getElementsByTagName('img')->item(0)->getAttribute('src'), '?'),
+                                    600,
+                                    600
+                                );
+                                $property['img_600x1200'] = $this->getHomeImage(
+                                    $property['id'],
+                                    strtok($dom->getElementsByTagName('img')->item(0)->getAttribute('src'), '?'),
+                                    600,
+                                    1200
+                                );
                             }
                             break;
 
