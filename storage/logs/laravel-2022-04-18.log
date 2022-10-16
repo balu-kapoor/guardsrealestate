@@ -1,0 +1,42 @@
+[2022-04-18 00:00:01] production.DEBUG: Syncing now..  
+[2022-04-18 12:00:01] production.DEBUG: Syncing now..  
+[2022-04-18 15:40:36] production.ERROR: Command "schedule:list" is not defined.
+
+Did you mean one of these?
+    event:list
+    make:listener
+    queue:listen
+    route:list
+    schedule:run {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"schedule:list\" is not defined.
+
+Did you mean one of these?
+    event:list
+    make:listener
+    queue:listen
+    route:list
+    schedule:run at /var/www/guardsrealestate.com/releases/20210609011701/vendor/symfony/console/Application.php:675)
+[stacktrace]
+#0 /var/www/guardsrealestate.com/releases/20210609011701/vendor/symfony/console/Application.php(254): Symfony\\Component\\Console\\Application->find()
+#1 /var/www/guardsrealestate.com/releases/20210609011701/vendor/symfony/console/Application.php(166): Symfony\\Component\\Console\\Application->doRun()
+#2 /var/www/guardsrealestate.com/releases/20210609011701/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#3 /var/www/guardsrealestate.com/releases/20210609011701/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#4 /var/www/guardsrealestate.com/releases/20210609011701/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#5 {main}
+"} 
+[2022-04-18 15:40:44] production.ERROR: Command "schedule:work" is not defined.
+
+Did you mean one of these?
+    queue:work
+    schedule:run {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"schedule:work\" is not defined.
+
+Did you mean one of these?
+    queue:work
+    schedule:run at /var/www/guardsrealestate.com/releases/20210609011701/vendor/symfony/console/Application.php:675)
+[stacktrace]
+#0 /var/www/guardsrealestate.com/releases/20210609011701/vendor/symfony/console/Application.php(254): Symfony\\Component\\Console\\Application->find()
+#1 /var/www/guardsrealestate.com/releases/20210609011701/vendor/symfony/console/Application.php(166): Symfony\\Component\\Console\\Application->doRun()
+#2 /var/www/guardsrealestate.com/releases/20210609011701/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run()
+#3 /var/www/guardsrealestate.com/releases/20210609011701/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#4 /var/www/guardsrealestate.com/releases/20210609011701/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#5 {main}
+"} 

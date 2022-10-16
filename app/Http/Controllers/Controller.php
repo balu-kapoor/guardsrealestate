@@ -324,29 +324,29 @@ class Controller extends BaseController
                     $i++;
                 }
 
-                if(!GB_PropertySync::where('id', $property['id'])->exists())
-                {
+                // if(!GB_PropertySync::where('id', $property['id'])->exists())
+                // {
 
-                    $GB_Property = new GB_PropertySync($property);
-                    $GB_Property->id = $property['id'];
+                //     $GB_Property = new GB_PropertySync($property);
+                //     $GB_Property->id = $property['id'];
 
-                    switch (strtolower($GB_Property->price_qualifier))
-                    {
-                        case 'pcm': $GB_Property->price = ($GB_Property->price * 12)/52;
+                //     switch (strtolower($GB_Property->price_qualifier))
+                //     {
+                //         case 'pcm': $GB_Property->price = ($GB_Property->price * 12)/52;
 
-                    }
+                //     }
 
-                    if(!empty($property['imagelist']))
-                        $GB_Property->convertImagelistDomNodeToArray($property['imagelist']);
-                    try{
-                        $GB_Property->save();
-                    }
-                    catch(\Exception $e)
-                    {
-                        dd($e,$property);
-                    }
-                }
-                print count($properties);
+                //     if(!empty($property['imagelist']))
+                //         $GB_Property->convertImagelistDomNodeToArray($property['imagelist']);
+                //     try{
+                //         $GB_Property->save();
+                //     }
+                //     catch(\Exception $e)
+                //     {
+                //         dd($e,$property);
+                //     }
+                // }
+                // print count($properties);
                 $properties[] = $property;
             }
         }
