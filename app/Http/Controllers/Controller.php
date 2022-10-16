@@ -346,7 +346,7 @@ class Controller extends BaseController
                         dd($e,$property);
                     }
                 }
-                // print count($properties);
+                print count($properties);
                 $properties[] = $property;
             }
         }
