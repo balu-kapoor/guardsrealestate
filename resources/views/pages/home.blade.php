@@ -31,8 +31,8 @@
         
 @section('page-body')
     <main >
-        <div class="hero ">           
-            <video autoplay loop muted id="home_video" poster="{{asset('images/hero1.jpg')}}"  class="home-video">
+        <div class="hero">           
+            <video preload autoplay muted loop playsinline id="home_video" poster="{{asset('images/hero1.jpg')}}"  class="home-video">
                 <source src="{{asset('home.mp4')}}" type="video/mp4">
             </video>
             <!-- <div ><a class="btn-guards white-text modal-trigger" href="#modal1" >Find your home</a></div> -->
