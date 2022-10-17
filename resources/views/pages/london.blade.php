@@ -43,7 +43,7 @@
 			<div class="overlay-inner bg-image-holder bg-cover">
 				<!-- <img src="https://fabrum.nz/guards/public/bg2.jpg" alt="background"> -->
 				<div class="video-container">
-					<video muted autoplay loop poster="https://fabrum.nz/guards/public/bg2.jpg"  class="home-video">
+					<video preload autoplay muted loop playsinline poster="https://fabrum.nz/guards/public/bg2.jpg"  class="home-video">
 						<source src="{{asset('london.mp4')}}" type="video/mp4">
 					</video>
 				</div>
