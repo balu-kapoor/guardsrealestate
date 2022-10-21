@@ -73,12 +73,16 @@
                             <p class="heading">Address</p>
                             <p style="text-transform: uppercase;">Head office</p>
                             <p class="content p-l-text">43 Berkeley Square, London  W1J 5AP</p>
+                            <div class="contact-row-block extra-top-space">
+                                <p class="heading">Phone</p>
+                                <p class="content p-l-text">+44 (0) 20 3633 1271</p>
+                            </div>
                             <p style="text-transform: uppercase;">north yorkshire</p>
                             <p class="content p-l-text">5 Yarm Rd Stockton-on-Tees TS18 3SF</p>
                         </div>
                         <div class="contact-row-block extra-top-space">
                             <p class="heading">Phone</p>
-                            <p class="content p-l-text">+44 (0) 20 3633 1271</p>
+                            <p class="content p-l-text">+44 (0) 01642 687 188</p>
                         </div>
                         <div class="contact-row-block extra-top-space">
                             <p class="heading">Email</p>
