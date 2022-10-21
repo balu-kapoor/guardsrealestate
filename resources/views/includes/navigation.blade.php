@@ -5,10 +5,10 @@
                 <div id="slide-out" class="sidenav menu">
                     <div class="menu-logo">
                         <img src="{{asset('images/full_logo.svg')}}" >
-                        <a href="tel:+442036331271" class="m-text" style="line-height: 1rem;display: block">+44 (0) 20 3633 1271</a>
                         <span>Guards London</span>
+                        <a href="tel:+442036331271" class="m-text" style="line-height: 1rem;display: block">+44 (0) 20 3633 1271</a>
+                        <span>Guards Country</span>                        
                         <a href="tel:+44001642687188" class="m-text" style="line-height: 1rem;display: block">+44 (0) 01642 687 188</a>
-                        <span>Guards Country</span>
                     </div>
                     <ul class="collapsible">
                         <li style=" -webkit-animation-duration: .5s;animation-duration:.5s;"><a href="{{route('website-home')}}" class="selected-nav ">Home</a>
