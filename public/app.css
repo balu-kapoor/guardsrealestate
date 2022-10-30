@@ -10529,3 +10529,8 @@ div#files_list {
     z-index: 9999999;
     box-shadow: 3px 10px 20px 1px #0000005c;
 }
+.menu-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}

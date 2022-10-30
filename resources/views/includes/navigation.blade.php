@@ -6,7 +6,7 @@
                     <div class="menu-logo">
                         <img src="{{asset('images/full_logo.svg')}}" >
                         <span>Guards London</span>
-                        <a href="tel:2036331271" class="m-text" style="line-height: 1rem;display: block">20 3633 1271</a>
+                        <a href="tel:2036331271" class="m-text" style="line-height: 1rem;display: block">020 3633 1271</a>
                         <span>Guards Country</span>                        
                         <a href="tel:01642687188" class="m-text" style="line-height: 1rem;display: block">01642 687 188</a>
                     </div>
