@@ -103,7 +103,9 @@ class Home extends Controller
             $i++;
         }    
         // echo $message;  
-        Mail::to('info@guardsrealestate.com')->send(new Repair($message, $images));
+        Mail::to('property.management@guardsrealestate.com')
+        ->cc(['info@guardsrealestate.com'])
+        ->send(new Repair($message, $images));
         return view('pages.create-issue-success', ['filterOptions' => $this->getSearchFilterOptionsForView()]);
     }
 
@@ -172,7 +174,9 @@ class Home extends Controller
         // ]);
         $data = $request->all();
         if(is_array($request->all())) {
-            Mail::to('info@guardsrealestate.com')->send(new BookValuation($request->all()));
+            Mail::to('nathan.dicarlo@guardsrealestate.com')
+            ->cc(['info@guardsrealestate.com'])
+            ->send(new BookValuation($request->all()));
         }
        
        return response()->json('success with mail');
@@ -185,7 +189,9 @@ class Home extends Controller
         //     'phone'  => 'required',
         // ]);
         if(is_array($request->all())) {
-            Mail::to('info@guardsrealestate.com')->send(new HomeBookValuation($request->all()));
+            Mail::to('nathan.dicarlo@guardsrealestate.com')
+            ->cc(['info@guardsrealestate.com'])            
+            ->send(new HomeBookValuation($request->all()));
         }
        
        return response()->json('success with mail');
