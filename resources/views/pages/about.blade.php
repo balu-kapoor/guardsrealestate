@@ -194,7 +194,7 @@
                 </div>
             </div>
 
-            <div class="team-box">
+            <?php /*<div class="team-box">
                 <div class="privacy-container">
                     <div class="container">
                         <div class="row" id="team-det">
@@ -228,7 +228,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */ ?>
 
             <div class="text-box-container">
                 <div class="container">
